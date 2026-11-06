@@ -2,13 +2,13 @@
 # 用法示例（raw 直链）：
 #   https://raw.githubusercontent.com/<用户>/<仓库>/main/by-region/hk.txt
 
-CA    5 条  by-region/ca.txt
-DE    5 条  by-region/de.txt
-ES    5 条  by-region/es.txt
-FR    5 条  by-region/fr.txt
-HK    5 条  by-region/hk.txt
-IR    5 条  by-region/ir.txt
-JP    5 条  by-region/jp.txt
-NL    5 条  by-region/nl.txt
-SG    5 条  by-region/sg.txt
-US    5 条  by-region/us.txt
+CA    2 条  by-region/ca.txt
+DE    2 条  by-region/de.txt
+ES    2 条  by-region/es.txt
+FR    2 条  by-region/fr.txt
+HK    2 条  by-region/hk.txt
+IR    2 条  by-region/ir.txt
+JP    2 条  by-region/jp.txt
+NL    2 条  by-region/nl.txt
+SG    2 条  by-region/sg.txt
+US    2 条  by-region/us.txt
