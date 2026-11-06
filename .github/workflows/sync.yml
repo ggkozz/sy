@@ -1,94 +1,94 @@
-# ===== Skyvora 节点·自动筛选版（单文件工作流，手机浏览器直接粘贴）=====
-#故障运行会：拉官方配置 → 真实延迟探测 → 选择地区筛选/排序 → 生成各客户端订阅
-# 可调参数见Actions→sync→Runworkflow里的输入框，或修改下面的env默认值
-名称：同步
-在：
-  计划任务：[{cron: "*/30 * * * *"}]
-  工作流分发：
-    输入：
-      Country: {description: "只保留这些地区，分隔分隔(如 jp,hk,us)，留空=全部", required: false, default: ""}
+# ===== Skyvora 节点 · 自动筛选版（单文件工作流，手机浏览器直接粘贴）=====
+# 每次运行会：拉官方配置 → 真实延迟探测 → 按地区筛选/排序 → 生成各客户端订阅
+# 可调参数见 Actions → sync → Run workflow 里的输入框，或改下面的 env 默认值
+name: sync
+on:
+  schedule: [{cron: "*/30 * * * *"}]
+  workflow_dispatch:
+    inputs:
+      countries:      {description: "只保留这些地区，逗号分隔(如 jp,hk,us)，留空=全部", required: false, default: ""}
       top_per_server: {description: "每个地区保留几个节点(按延迟从低到高)", required: false, default: "2"}
-      max_ms: {description: "延迟上限(毫秒)，超过就丢弃", required: false, default: "600"}
-      min_alive: {description: "新生儿电视剧数下限，少于它不筛选(防止全部被卡)", required: false, default: "4"}
-      probe: {description: "是否做真实延迟探测 1=开 0=关", required: false, default: "1"}
-权限：{内容：写入}
-并发性：{group: skyvora, cancel-in-progress: false}
-工作机会：
-  同步：
-    运行平台：ubuntu-latest
-    环境：
+      max_ms:         {description: "延迟上限(毫秒)，超过就丢弃", required: false, default: "600"}
+      min_alive:      {description: "存活地区数下限，少于它就不筛选(防止全被卡)", required: false, default: "4"}
+      probe:          {description: "是否做真实延迟探测 1=开 0=关", required: false, default: "1"}
+permissions: {contents: write}
+concurrency: {group: skyvora, cancel-in-progress: false}
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
       SKYVORA_DEVICE_ID: ${{ secrets.SKYVORA_DEVICE_ID }}
-      国家/地区：${{ inputs.countries }}
-      每台服务器的 TOP_PER_SERVER: ${{ inputs.top_per_server }}
-      最大毫秒数：${{ inputs.max_ms }}
+      COUNTRIES: ${{ inputs.countries }}
+      TOP_PER_SERVER: ${{ inputs.top_per_server }}
+      MAX_MS: ${{ inputs.max_ms }}
       MIN_ALIVE: ${{ inputs.min_alive }}
-      探针：${{ inputs.probe }}
-    步骤：
-      - 使用：actions/checkout@v4
-      - 名称：拉配置+探测+筛选+生成
-        运行：|
+      PROBE: ${{ inputs.probe }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: 拉配置 + 探测 + 筛选 + 生成
+        run: |
           python3 - <<'PY'
-          导入 json、os、base64、uuid、socket、time 和 urllib.request
+          import json, os, base64, uuid, socket, time, urllib.request
           from concurrent.futures import ThreadPoolExecutor
 
           BASE = "https://skyvora.app/sub/2a2fd40b4f429240933c078a43862344"
-          UA =“Dalvik/2.1.0（Linux；U；Android 14；Pixel 7 Build/UQ1A.240205.002）”
+          UA = "Dalvik/2.1.0 (Linux; U; Android 14; Pixel 7 Build/UQ1A.240205.002)"
 
 
           def env(k, d=""):
-              返回 (os.environ.get(k) 或 d).strip()
+              return (os.environ.get(k) or d).strip()
 
 
-          JUNK = ("promo", "update", "quota") # 服务端占位/感应行
+          JUNK = ("promo", "update", "quota")          # 服务端占位/诱导行
           DEAD_IP = ("127.0.0.1", "0.0.0.0", "localhost")
 
 
           def is_real(s):
-              如果 str(s.get("id", "")).startswith(JUNK):
-                  返回 False
+              if str(s.get("id", "")).startswith(JUNK):
+                  return False
               eps = [e for e in (s.get("endpoints") or []) if e not in DEAD_IP]
-              返回 bool(eps)
+              return bool(eps)
 
 
           def fetch(dev, ver):
-              src = env("SOURCE") # 离线兜底：用仓库里上次抓到的原始配置
-              如果 src 存在且 os.path.exists(src):
+              src = env("SOURCE")                       # 离线兜底：用仓库里上次抓到的原始配置
+              if src and os.path.exists(src):
                   d = json.load(open(src))
-                  如果 isinstance(d, list):
-                      d = {"服务器": d}
+                  if isinstance(d, list):
+                      d = {"servers": d}
                   real = [s for s in d.get("servers", []) if is_real(s) and len(s.get("endpoints") or []) > 1]
                   print("[i] 离线源 %s -> %d 个节点" % (src, len(real)))
-                  返回 d，实数
+                  return d, real
               req = urllib.request.Request("%s?d=%s&v=%s&q=0" % (BASE, dev, ver),
                                            headers={"User-Agent": UA, "Accept": "application/json"})
               d = json.loads(urllib.request.urlopen(req, timeout=25).read().decode())
-              返回 d，[s for s in d.get("servers", []) if is_real(s)]
+              return d, [s for s in d.get("servers", []) if is_real(s)]
 
 
           def fetch_any(dev):
-              """服务端按v参数放行：某些版本号只会下发quota-*死行。
-              依次尝试候选版本，取第一个能返回>=3个真实节点的。"""
-              候选对象 = []
+              """服务端按 v 参数放行：某些版本号会只下发 quota-* 死行。
+              依次试候选版本，取第一个能返回 >=3 个真实节点的。"""
+              cands = []
               for f in ("version.txt",):
-                  如果 os.path.exists(f):
+                  if os.path.exists(f):
                       v = open(f).read().strip()
-                      如果 v.isdigit():
+                      if v.isdigit():
                           cands.append(v)
               cands += [c.strip() for c in env("API_VERSIONS", "65,60,55,52,61").split(",") if c.strip()]
-              已查看，上次 = 设置()，无
+              seen, last = set(), None
               for v in cands:
-                  如果 v 在 seen 中：
-                      继续
+                  if v in seen:
+                      continue
                   seen.add(v)
-                  尝试：
+                  try:
                       d, real = fetch(dev, v)
-                  除异常 e 外：
-                      最后 = "v=%s 请求失败 %s" % (v, e)
-                      继续
-                  如果 len(real) >= 3：
-                      打开("version.txt", "w").write(v)
+                  except Exception as e:
+                      last = "v=%s 请求失败 %s" % (v, e)
+                      continue
+                  if len(real) >= 3:
+                      open("version.txt", "w").write(v)
                       print("[i] 使用 v=%s 取到 %d 个真实节点" % (v, len(real)))
-                      返回 d，实数
+                      return d, real
                   last = "v=%s 只返回 %d 个真实节点（%s）" % (v, len(real), [s["id"] for s in d.get("servers", [])][:3])
               raise SystemExit("所有候选版本都拿不到真实节点，本次不更新。最后一次: %s" % last)
 
@@ -97,19 +97,19 @@
               t0 = time.time()
               s = socket.socket()
               s.settimeout(timeout)
-              尝试：
+              try:
                   s.connect((host, int(port)))
-                  返回 int((time.time() - t0) * 1000)
-              例外情况：
-                  返回 None
-              最后：
+                  return int((time.time() - t0) * 1000)
+              except Exception:
+                  return None
+              finally:
                   s.close()
 
 
           dev = env("SKYVORA_DEVICE_ID")
-          如果 dev 不存在且 os.path.exists("device_id.txt"):
+          if not dev and os.path.exists("device_id.txt"):
               dev = open("device_id.txt").read().strip()
-          如果不是开发人员：
+          if not dev:
               dev = uuid.uuid4().hex
           open("device_id.txt", "w").write(dev)
 
@@ -124,113 +124,113 @@
           d, S = fetch_any(dev)
           S = [s for s in S if [e for e in s["endpoints"] if e not in DEAD_IP]]
 
-          如果是国家/地区：
+          if COUNTRIES:
               S = [s for s in S if str(s.get("country", "")).lower() in COUNTRIES
-                   或者 str(s.get("id", "")).split("-")[0].lower() 在 COUNTRIES]
-              如果不是 S：
-                  raise SystemExit("按COUNTRIES=%s 过滤后没有节点，本次不更新" % ",".join(COUNTRIES))
+                   or str(s.get("id", "")).split("-")[0].lower() in COUNTRIES]
+              if not S:
+                  raise SystemExit("按 COUNTRIES=%s 过滤后没有节点，本次不更新" % ",".join(COUNTRIES))
 
 
           def cands(s):
               ports = s.get("ports") or [s.get("port") or 443]
-              输出 = []
+              out = []
               for ip in [e for e in (s.get("endpoints") or []) if e not in DEAD_IP]:
-                  对于端口中的 p：
+                  for p in ports:
                       out.append((ip, int(p)))
-              返回
+              return out
 
 
           pairs = [(s, ip, p) for s in S for ip, p in cands(s)]
-          报告 = []
-          纬度 = {}
-          如果 DO_PROBE：
-              使用 ThreadPoolExecutor(max_workers=32) 作为示例：
+          report = []
+          lat = {}
+          if DO_PROBE:
+              with ThreadPoolExecutor(max_workers=32) as ex:
                   futs = {ex.submit(probe, ip, p, TIMEOUT): (s["id"], ip, p) for s, ip, p in pairs}
-                  对于 f 中的每个 f：
-                      sid、ip、p = futs[f]
-                      尝试：
+                  for f in futs:
+                      sid, ip, p = futs[f]
+                      try:
                           lat[(sid, ip, p)] = f.result()
-                      例外情况：
+                      except Exception:
                           lat[(sid, ip, p)] = None
 
           # ---------- 筛选 ----------
-          保留 = []
-          对于 S 中的 s：
+          kept = []
+          for s in S:
               cs = [(ip, p) for ip, p in cands(s)]
-              如果 DO_PROBE：
+              if DO_PROBE:
                   cs = [c for c in cs if lat.get((s["id"], c[0], c[1])) is not None
-                        且 lat[(s["id"], c[0], c[1])] <= MAX_MS]
+                        and lat[(s["id"], c[0], c[1])] <= MAX_MS]
                   cs.sort(key=lambda c: lat[(s["id"], c[0], c[1])])
                   cs = cs[:TOP_PER_SERVER]
-              别的：
-                  cs = cs[:1] # 不探测时每个地区只取最佳终点，避免订阅里几分钟塞条
+              else:
+                  cs = cs[:1]        # 不探测时每个地区只取首选端点，避免订阅里塞几百条
               alive = len(cs)
-              report.append("%-8s %-14s 候选%-3d 最多%-3d %s" % (
+              report.append("%-8s %-14s 候选%-3d 存活%-3d %s" % (
                   s["id"], s.get("country", ""), len(cands(s)), alive,
                   ",".join("%s:%d/%s" % (c[0], c[1], "?" if lat.get((s["id"], c[0], c[1])) is None
-                                         否则“%dms” % lat[(s["id"], c[0], c[1])]) for c in cs[:3])))
-              对于 ip，p 在 cs 中：
+                                         else "%dms" % lat[(s["id"], c[0], c[1])]) for c in cs[:3])))
+              for ip, p in cs:
                   kept.append((s, ip, p))
 
-          need = min(MIN_ALIVE, len(S)) # 只扫了 2 个地区时，不要求 4 个小区
-          如果 DO_PROBE 且 len({k[0]["id"] for k in kept}) < 需要：
-              print("[!]全部地区只有%d个<要求%d个，回退为不过滤（保留每个地区默认端点）"
+          need = min(MIN_ALIVE, len(S))          # 只筛了 2 个地区时，不该要求 4 个存活
+          if DO_PROBE and len({k[0]["id"] for k in kept}) < need:
+              print("[!] 存活地区只有 %d 个 < 要求 %d 个，回退为不过滤（保留每个地区首选端点）"
                     % (len({k[0]["id"] for k in kept}), need))
-              保留 = [(s, (s.get("endpoints") or [""])[0], s.get("port") or (s.get("ports") or [443])[0]) for s in S]
+              kept = [(s, (s.get("endpoints") or [""])[0], s.get("port") or (s.get("ports") or [443])[0]) for s in S]
 
-          如果不保留：
-              raise SystemExit("筛选后无可用节点（可能 GitHub 机房 IP 被墙），本次不更新，保留剩余配置")
+          if not kept:
+              raise SystemExit("筛选后无可用节点（可能 GitHub 机房 IP 被墙），本次不更新，保留旧配置")
 
 
           def lab(s, ip, port):
-              """节点名必须唯一：同地区多端点时带上 ip:端口，否则客户端会相互覆盖。"""
+              """节点名必须唯一：同地区多端点时带上 ip:端口，否则客户端会互相覆盖。"""
               base = "%s-%s" % (s["id"], s["name"].replace(" ", ""))
-              如果 sum(1 for k in kept if k[0]["id"] == s["id"]) == 1，则返回 base，否则返回 "%s-%s-%d" % (base, ip, port)
+              return base if sum(1 for k in kept if k[0]["id"] == s["id"]) == 1 else "%s-%s-%d" % (base, ip, port)
 
 
           def link(s, ip, port, name=""):
               q = ("encryption=none&security=reality&sni=%s&fp=%s&type=tcp&pbk=%s"
                    % (s["sni"], s.get("fingerprint") or "chrome", s["public_key"]))
-              如果 s.get("short_id"):
+              if s.get("short_id"):
                   q += "&sid=" + s["short_id"]
-              如果 s.get("flow"):
+              if s.get("flow"):
                   q += "&flow=" + s["flow"]
-              tag = 名称或 lab(s, ip, port)
-              返回“vless://%s@%s:%s?%s#%s” % (s["uuid"], ip, port, q, tag)
+              tag = name or lab(s, ip, port)
+              return "vless://%s@%s:%s?%s#%s" % (s["uuid"], ip, port, q, tag)
 
 
           cur = [link(s, ip, p) for s, ip, p in kept]
-          完整 = 当前
+          full = cur
           picked_ids = {s["id"] for s, _, _ in kept}
 
 
           def out(s, ip, port):
               o = {"type": "vless", "tag": lab(s, ip, port),
-                   "服务器": ip，"服务器端口": int(端口)，"UUID": s["UUID"]，"数据包编码": "xudp",
+                   "server": ip, "server_port": int(port), "uuid": s["uuid"], "packet_encoding": "xudp",
                    "tls": {"enabled": True, "server_name": s["sni"],
                            "utls": {"enabled": True, "fingerprint": s.get("fingerprint") or "chrome"},
                            "reality": {"enabled": True, "public_key": s["public_key"],
-                                       "short_id": s.get("short_id") 或 ""}}}
-              如果 s.get("flow"):
+                                       "short_id": s.get("short_id") or ""}}}
+              if s.get("flow"):
                   o["flow"] = s["flow"]
-              返回 o
+              return o
 
 
           obs = [out(s, ip, p) for s, ip, p in kept]
 
-          # ---------- 客户端侧筛选的分组（GitHub 只负责+清晰死，最快由客户端实测）----------
+          # ---------- 客户端侧筛选的分组（GitHub 只负责抓+剔死，最快由客户端实测）----------
           by_cc = {}
-          对于保留的 s、ip、p：
+          for s, ip, p in kept:
               by_cc.setdefault((s.get("country") or "??").upper(), []).append((s, ip, p))
-          亚洲 = ("HK", "JP", "SG", "TW", "KR", "IR", "MY", "TH", "VN", "PH", "ID", "IN")
-          西部 = ("美国", "加拿大", "德国", "荷兰", "法国", "西班牙", "英国", "瑞典", "芬兰", "波兰", "瑞士", "奥地利", "意大利", "罗马尼亚")
+          ASIA = ("HK", "JP", "SG", "TW", "KR", "IR", "MY", "TH", "VN", "PH", "ID", "IN")
+          WEST = ("US", "CA", "DE", "NL", "FR", "ES", "GB", "SE", "FI", "PL", "CH", "AT", "IT", "RO")
 
 
           def ut(tag, lst):
-              返回 {"type": "urltest", "tag": tag,
-                      "出站": [lab(s, ip, p) for s, ip, p in lst],
+              return {"type": "urltest", "tag": tag,
+                      "outbounds": [lab(s, ip, p) for s, ip, p in lst],
                       "url": "http://www.gstatic.com/generate_204",
-                      "间隔": "3分钟", "容差": 50, "空闲超时": "30分钟"}
+                      "interval": "3m", "tolerance": 50, "idle_timeout": "30m"}
 
 
           grp = [ut("auto", kept)]
@@ -240,9 +240,9 @@
               gnames.append("r-" + cc)
           asia = [x for x in kept if (x[0].get("country") or "").upper() in ASIA]
           west = [x for x in kept if (x[0].get("country") or "").upper() in WEST]
-          如果 asia 且 len(asia) != len(kept):
+          if asia and len(asia) != len(kept):
               grp.append(ut("asia", asia)); gnames.append("asia")
-          如果 west 且 len(west) != len(kept):
+          if west and len(west) != len(kept):
               grp.append(ut("west", west)); gnames.append("west")
 
           cfg = {
@@ -250,55 +250,55 @@
               "dns": {"servers": [{"tag": "proxydns", "type": "https", "server": "1.1.1.1", "detour": "proxy"},
                                   {"tag": "localdns", "type": "local"}],
                       "final": "proxydns", "strategy": "prefer_ipv4"},
-              "入站": [{"类型": "混合", "标签": "混合入", "监听": "127.0.0.1", "监听端口": 2080}],
-              “出站”：观测 + 组 + [
+              "inbounds": [{"type": "mixed", "tag": "mixed-in", "listen": "127.0.0.1", "listen_port": 2080}],
+              "outbounds": obs + grp + [
                   {"type": "selector", "tag": "proxy", "outbounds": gnames + ["direct"], "default": "auto"},
                   {"type": "direct", "tag": "direct"}],
-              "路由": {"规则": [{"操作": "嗅探"}, {"协议": "DNS", "操作": "劫持DNS"},
+              "route": {"rules": [{"action": "sniff"}, {"protocol": "dns", "action": "hijack-dns"},
                                   {"ip_is_private": True, "outbound": "direct"}],
                         "final": "proxy", "auto_detect_interface": env("AUTO_DETECT", "1") != "0",
                         "default_domain_resolver": {"server": "localdns"}},
           }
 
-          # ---------- Clash：每个地区一个 url-test 包 + 一个全局自动选优 ----------
-          y = ["代理:"]
-          对于保留的 s、ip、p：
-              y += [" - name: " + lab(s, ip, p),
-                    " 类型：vless", " 服务器：" + ip, " 端口：%d" % int(p),
-                    "uuid: " + s["uuid"], "udp: true", "tls: true", "network: tcp",
-                    服务器名称： + s["sni"]，
-                    客户端指纹： + (s.get("fingerprint") 或 "chrome"),
-                    “现实选项：”，“公钥：” + s["public_key"]，
-                    " short-id: " + (s.get("short_id") 或 "")]
-              如果 s.get("flow"):
-                  y.append(" flow: " + s["flow"])
+          # ---------- Clash：每个地区一个 url-test 分组 + 一个全局自动选优 ----------
+          y = ["proxies:"]
+          for s, ip, p in kept:
+              y += ["  - name: " + lab(s, ip, p),
+                    "    type: vless", "    server: " + ip, "    port: %d" % int(p),
+                    "    uuid: " + s["uuid"], "    udp: true", "    tls: true", "    network: tcp",
+                    "    servername: " + s["sni"],
+                    "    client-fingerprint: " + (s.get("fingerprint") or "chrome"),
+                    "    reality-opts:", "      public-key: " + s["public_key"],
+                    "      short-id: " + (s.get("short_id") or "")]
+              if s.get("flow"):
+                  y.append("    flow: " + s["flow"])
 
           def cg(name, members):
-              返回 [" - name: " + name, " type: url-test",
-                      "url: http://www.gstatic.com/generate_204",
-                      “间隔：300”，“容差：50”，“惰性：false”，
-                      "最大失败次数：3", "代理："] + [" - " + m for m in members]
+              return ["  - name: " + name, "    type: url-test",
+                      "    url: http://www.gstatic.com/generate_204",
+                      "    interval: 300", "    tolerance: 50", "    lazy: false",
+                      "    max-failed-times: 3", "    proxies:"] + ["      - " + m for m in members]
 
-          y += ["代理组:"]
+          y += ["proxy-groups:"]
           y += cg("\u267b\ufe0f auto", [lab(s, ip, p) for s, ip, p in kept])
           for cc in sorted(by_cc):
               y += cg("\U0001f4cd " + cc, [lab(s, ip, p) for s, ip, p in by_cc[cc]])
-          如果 asia 且 len(asia) != len(kept):
+          if asia and len(asia) != len(kept):
               y += cg("\U0001f30f asia", [lab(s, ip, p) for s, ip, p in asia])
-          如果 west 且 len(west) != len(kept):
+          if west and len(west) != len(kept):
               y += cg("\U0001f30e west", [lab(s, ip, p) for s, ip, p in west])
-          y += [“规则：”，“- MATCH，自动”]
+          y += ["rules:", "  - MATCH,auto"]
 
-          # ---------- 选择电视剧拆订阅（客户端里加多个订阅 = 最省事的“筛选”）----------
+          # ---------- 按地区拆订阅（客户端里加多个订阅 = 最省事的"筛选"）----------
           os.makedirs("by-region", exist_ok=True)
-          idx = ["#各电视剧独立订阅：客户端里加多个订阅地址，想用哪个电视剧就切哪个",
-                 "# 最有效示例（原始直链）：",
-                 "# https://raw.githubusercontent.com/<用户>/<仓库>/main/by-region/hk.txt", ""]
+          idx = ["# 各地区独立订阅：客户端里加多个订阅地址，想用哪个地区就切哪个",
+                 "# 用法示例（raw 直链）：",
+                 "#   https://raw.githubusercontent.com/<用户>/<仓库>/main/by-region/hk.txt", ""]
           for cc in sorted(by_cc):
               lst = by_cc[cc]
               body = "\n".join(link(s, ip, p) for s, ip, p in lst)
               open("by-region/%s.txt" % cc.lower(), "w").write(base64.b64encode(body.encode()).decode())
-              idx.append("%-3s %3d 条 by-region/%s.txt" % (cc, len(lst), cc.lower()))
+              idx.append("%-3s %3d 条  by-region/%s.txt" % (cc, len(lst), cc.lower()))
           open("by-region/index.txt", "w").write("\n".join(idx) + "\n")
 
           open("sub.txt", "w").write(base64.b64encode("\n".join(cur).encode()).decode())
@@ -309,41 +309,41 @@
           open("nodes.json", "w").write(json.dumps([{"id": s["id"], "name": s["name"], "country": s.get("country"),
                                                      "ip": ip, "port": p, "ms": lat.get((s["id"], ip, p))}
                                                     for s, ip, p in kept], ensure_ascii=False, indent=2))
-          打开("probe-report.txt", "w").write(
-              "Skyvora 筛选报告 %s\n 筛选: states=%s top_per_server=%d max_ms=%dprobe=%s\n\n%s\n\n 类别中: %d 个端点 / %d 个地区\n"
-              % (time.strftime("%Y-%m-%d %H:%M:%S"), COUNTRIES 或 "全部", TOP_PER_SERVER, MAX_MS, DO_PROBE,
+          open("probe-report.txt", "w").write(
+              "Skyvora 节点筛选报告  %s\n筛选: countries=%s top_per_server=%d max_ms=%d probe=%s\n\n%s\n\n入选中: %d 个端点 / %d 个地区\n"
+              % (time.strftime("%Y-%m-%d %H:%M:%S"), COUNTRIES or "全部", TOP_PER_SERVER, MAX_MS, DO_PROBE,
                  "\n".join(report), len(kept), len(picked_ids)))
-          print("OK，在 %d 台服务器上保留了 %d 个端点（探测数=%s）" % (len(kept), len(picked_ids), DO_PROBE))
+          print("OK kept=%d endpoints across %d servers (probe=%s)" % (len(kept), len(picked_ids), DO_PROBE))
           print("\n".join(report))
           PY
-      - 名称：报告写进运行摘要
-        如果：总是()
-        运行：|
-          如果 [ -f probe-report.txt ]；则
-            echo '###本次筛选结果' >> $GITHUB_STEP_SUMMARY
-            echo '```' >>​​ $GITHUB_STEP_SUMMARY
+      - name: 报告写进运行摘要
+        if: always()
+        run: |
+          if [ -f probe-report.txt ]; then
+            echo '### 本次筛选结果' >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
             cat probe-report.txt >> $GITHUB_STEP_SUMMARY
-            echo '```' >>​​ $GITHUB_STEP_SUMMARY
-          菲
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
       - name: 提交（无变化则不提交）
-        运行：|
-          git config user.name skyvora-bot
+        run: |
+          git config user.name  skyvora-bot
           git config user.email skyvora-bot@users.noreply.github.com
           git add -A
-          如果 git diff --cached --quiet；那么
-            # 内容没变：GitHub 至 60 天无提交的仓库终止定时任务，
-            #所以每20天补一次心跳提交保活
-            如果 [ ! -f .heartbeat ] || [ -n "$(find .heartbeat -mtime +20 2>/dev/null)" ]; 则
+          if git diff --cached --quiet; then
+            # 内容没变：GitHub 会对 60 天无提交的仓库停用定时任务，
+            # 所以每 20 天补一条心跳提交保活
+            if [ ! -f .heartbeat ] || [ -n "$(find .heartbeat -mtime +20 2>/dev/null)" ]; then
               date -u +%Y-%m-%dT%H:%M:%SZ > .heartbeat
               git add .heartbeat
               git commit -m "heartbeat: keep schedule alive [skip ci]" >/dev/null
               git push
-              echo“内容无变化，已写心跳保活”
-            别的
-              echo "内容无变化，跳过提交（定时任务正常，消耗担心）"
-            菲
-          别的
+              echo "内容无变化，已写心跳保活"
+            else
+              echo "内容无变化，跳过提交（定时任务正常，无需担心）"
+            fi
+          else
             git commit -m "sync: $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
             git push
             echo "已提交本次更新"
-          菲
+          fi
