@@ -106,12 +106,14 @@ jobs:
                   s.close()
 
 
-          dev = env("SKYVORA_DEVICE_ID")
-          if not dev and os.path.exists("device_id.txt"):
-              dev = open("device_id.txt").read().strip()
-          if not dev:
-              dev = uuid.uuid4().hex
-          open("device_id.txt", "w").write(dev)
+          # ---------- 设备 ID 轮换 ----------
+          # 服务端对同一个设备 ID 只放行有限次数，用久了就只回 quota-0/1 死行。
+          # 所以每次运行都换新 ID（固定 ID 只作为第一个候选，失败了自动换新的）。
+          devs = []
+          fixed = env("SKYVORA_DEVICE_ID")
+          if fixed:
+              devs.append(fixed)
+          devs += [uuid.uuid4().hex for _ in range(6)]
 
           # ---------- 参数 ----------
           COUNTRIES = [c.strip().lower() for c in env("COUNTRIES").split(",") if c.strip()]
@@ -121,7 +123,22 @@ jobs:
           TIMEOUT = float(env("PROBE_TIMEOUT", "4"))
           DO_PROBE = env("PROBE", "1") != "0"
 
-          d, S = fetch_any(dev)
+          d = S = None
+          last_err = None
+          for _dev in devs:
+              try:
+                  d, S = fetch_any(_dev)
+                  print("[i] 设备 ID %s**** 取到 %d 个真实节点" % (_dev[:8], len(S)))
+                  break
+              except SystemExit as e:
+                  last_err = str(e)
+                  print("[!] 设备 ID %s**** 不可用：%s" % (_dev[:8], last_err))
+              except Exception as e:
+                  last_err = "%s: %s" % (type(e).__name__, e)
+                  print("[!] 设备 ID %s**** 异常：%s" % (_dev[:8], last_err))
+          if not S:
+              raise SystemExit("所有设备 ID 都拿不到真实节点，本次不更新（保留旧配置）。最后一次: %s" % last_err)
+
           S = [s for s in S if [e for e in s["endpoints"] if e not in DEAD_IP]]
 
           if COUNTRIES:
