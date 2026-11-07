@@ -1,9 +1,9 @@
 proxies:
-  - name: us-1-UnitedStates-50.7.245.220-2088
+  - name: us-1-UnitedStates-50.7.245.205-2088
     type: vless
-    server: 50.7.245.220
+    server: 50.7.245.205
     port: 2088
-    uuid: 14484d4a-fdc3-4045-8838-19eb1972a640
+    uuid: 92394784-61e6-454d-a2ba-792fe1f70ea5
     udp: true
     tls: true
     network: tcp
@@ -17,7 +17,7 @@ proxies:
     type: vless
     server: 50.7.245.212
     port: 2088
-    uuid: 14484d4a-fdc3-4045-8838-19eb1972a640
+    uuid: 92394784-61e6-454d-a2ba-792fe1f70ea5
     udp: true
     tls: true
     network: tcp
@@ -27,81 +27,81 @@ proxies:
       public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo
       short-id: 66d62ef550107695
     flow: xtls-rprx-vision
-  - name: ca-1-Canada-50.7.245.211-2093
+  - name: ca-1-Canada-50.7.245.202-2093
+    type: vless
+    server: 50.7.245.202
+    port: 2093
+    uuid: cb1f8911-1c09-47a7-a36f-c552a5143eaf
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+      short-id: 8a9725533854a7e8
+    flow: xtls-rprx-vision
+  - name: ca-1-Canada-198.16.113.218-2093
+    type: vless
+    server: 198.16.113.218
+    port: 2093
+    uuid: cb1f8911-1c09-47a7-a36f-c552a5143eaf
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+      short-id: 8a9725533854a7e8
+    flow: xtls-rprx-vision
+  - name: nl-1-Netherlands-213.152.165.196-2053
+    type: vless
+    server: 213.152.165.196
+    port: 2053
+    uuid: c0662b93-8b41-4fe9-b539-37cd69bfa274
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
+      short-id: 906609ffc9e8d9fe
+    flow: xtls-rprx-vision
+  - name: nl-1-Netherlands-213.152.165.202-443
+    type: vless
+    server: 213.152.165.202
+    port: 443
+    uuid: c0662b93-8b41-4fe9-b539-37cd69bfa274
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
+      short-id: 906609ffc9e8d9fe
+    flow: xtls-rprx-vision
+  - name: fr-1-France-50.7.245.221-2053
+    type: vless
+    server: 50.7.245.221
+    port: 2053
+    uuid: 8d109086-d135-4381-8a45-e9b7e51ed691
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+      short-id: 716b7eba38125f3a
+    flow: xtls-rprx-vision
+  - name: fr-1-France-50.7.245.211-2083
     type: vless
     server: 50.7.245.211
-    port: 2093
-    uuid: a9f79967-9814-4111-a8ea-7793c00d9028
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-      short-id: 8a9725533854a7e8
-    flow: xtls-rprx-vision
-  - name: ca-1-Canada-213.152.165.203-2093
-    type: vless
-    server: 213.152.165.203
-    port: 2093
-    uuid: a9f79967-9814-4111-a8ea-7793c00d9028
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-      short-id: 8a9725533854a7e8
-    flow: xtls-rprx-vision
-  - name: nl-1-Netherlands-213.152.165.206-443
-    type: vless
-    server: 213.152.165.206
-    port: 443
-    uuid: 193507c8-1082-4b33-9dd9-ee9a5de3f8fb
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
-      short-id: 906609ffc9e8d9fe
-    flow: xtls-rprx-vision
-  - name: nl-1-Netherlands-213.152.165.204-2053
-    type: vless
-    server: 213.152.165.204
-    port: 2053
-    uuid: 193507c8-1082-4b33-9dd9-ee9a5de3f8fb
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
-      short-id: 906609ffc9e8d9fe
-    flow: xtls-rprx-vision
-  - name: fr-1-France-50.7.245.206-2053
-    type: vless
-    server: 50.7.245.206
-    port: 2053
-    uuid: 3901be95-3845-4a02-aff4-8d5ed36ca809
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-      short-id: 716b7eba38125f3a
-    flow: xtls-rprx-vision
-  - name: fr-1-France-50.7.245.213-2083
-    type: vless
-    server: 50.7.245.213
     port: 2083
-    uuid: 3901be95-3845-4a02-aff4-8d5ed36ca809
+    uuid: 8d109086-d135-4381-8a45-e9b7e51ed691
     udp: true
     tls: true
     network: tcp
@@ -111,11 +111,11 @@ proxies:
       public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
       short-id: 716b7eba38125f3a
     flow: xtls-rprx-vision
-  - name: de-1-Germany-50.7.156.122-443
+  - name: de-1-Germany-50.7.86.202-2083
     type: vless
-    server: 50.7.156.122
-    port: 443
-    uuid: b8293a31-1e69-46b2-9a98-c12ffdc851d7
+    server: 50.7.86.202
+    port: 2083
+    uuid: 2325b489-105c-41bd-8e8a-d3f1a686ad6e
     udp: true
     tls: true
     network: tcp
@@ -129,7 +129,7 @@ proxies:
     type: vless
     server: 50.7.156.125
     port: 443
-    uuid: b8293a31-1e69-46b2-9a98-c12ffdc851d7
+    uuid: 2325b489-105c-41bd-8e8a-d3f1a686ad6e
     udp: true
     tls: true
     network: tcp
@@ -139,11 +139,11 @@ proxies:
       public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
       short-id: 55986a94e2228791
     flow: xtls-rprx-vision
-  - name: sg-1-Singapore-67.159.49.28-2053
+  - name: sg-1-Singapore-67.159.49.29-2053
     type: vless
-    server: 67.159.49.28
+    server: 67.159.49.29
     port: 2053
-    uuid: b6e40221-3534-4953-91a1-e2507a1a7672
+    uuid: 7a40e823-4bc1-4de2-a43d-a4876aae4611
     udp: true
     tls: true
     network: tcp
@@ -153,11 +153,11 @@ proxies:
       public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34
       short-id: deccc6fac1ddb0ff
     flow: xtls-rprx-vision
-  - name: sg-1-Singapore-50.7.252.50-2083
+  - name: sg-1-Singapore-50.7.252.50-443
     type: vless
     server: 50.7.252.50
-    port: 2083
-    uuid: b6e40221-3534-4953-91a1-e2507a1a7672
+    port: 443
+    uuid: 7a40e823-4bc1-4de2-a43d-a4876aae4611
     udp: true
     tls: true
     network: tcp
@@ -167,11 +167,11 @@ proxies:
       public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34
       short-id: deccc6fac1ddb0ff
     flow: xtls-rprx-vision
-  - name: jp-1-Japan-50.7.44.27-443
+  - name: jp-1-Japan-50.7.44.20-2083
     type: vless
-    server: 50.7.44.27
-    port: 443
-    uuid: c8aa4f8a-7bad-40b9-b87b-3ab2af41e70e
+    server: 50.7.44.20
+    port: 2083
+    uuid: 6d62c8cd-bedd-4913-922e-da54fa1501c9
     udp: true
     tls: true
     network: tcp
@@ -181,11 +181,11 @@ proxies:
       public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
       short-id: bb472a184677af64
     flow: xtls-rprx-vision
-  - name: jp-1-Japan-50.7.159.146-2053
+  - name: jp-1-Japan-50.7.44.29-2053
     type: vless
-    server: 50.7.159.146
+    server: 50.7.44.29
     port: 2053
-    uuid: c8aa4f8a-7bad-40b9-b87b-3ab2af41e70e
+    uuid: 6d62c8cd-bedd-4913-922e-da54fa1501c9
     udp: true
     tls: true
     network: tcp
@@ -194,12 +194,26 @@ proxies:
     reality-opts:
       public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
       short-id: bb472a184677af64
+    flow: xtls-rprx-vision
+  - name: hk-1-HongKong-50.7.44.27-2091
+    type: vless
+    server: 50.7.44.27
+    port: 2091
+    uuid: dee52058-e044-4fc3-ad2d-bac8fcf615c0
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+      short-id: 08a4b1f473932632
     flow: xtls-rprx-vision
   - name: hk-1-HongKong-50.7.159.146-2091
     type: vless
     server: 50.7.159.146
     port: 2091
-    uuid: dc7b8d60-3bc7-4fcc-8483-ca49e45b63fa
+    uuid: dee52058-e044-4fc3-ad2d-bac8fcf615c0
     udp: true
     tls: true
     network: tcp
@@ -209,25 +223,11 @@ proxies:
       public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
       short-id: 08a4b1f473932632
     flow: xtls-rprx-vision
-  - name: hk-1-HongKong-50.7.44.26-2091
+  - name: es-1-Spain-67.159.47.238-2053
     type: vless
-    server: 50.7.44.26
-    port: 2091
-    uuid: dc7b8d60-3bc7-4fcc-8483-ca49e45b63fa
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-      short-id: 08a4b1f473932632
-    flow: xtls-rprx-vision
-  - name: es-1-Spain-67.159.47.237-2083
-    type: vless
-    server: 67.159.47.237
-    port: 2083
-    uuid: 0cb9bcbd-344f-478c-af69-1acda2b3c5d5
+    server: 67.159.47.238
+    port: 2053
+    uuid: e140049c-7122-423e-aa3c-91dfafde9f18
     udp: true
     tls: true
     network: tcp
@@ -237,11 +237,11 @@ proxies:
       public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
       short-id: 3869d49a9a79e06a
     flow: xtls-rprx-vision
-  - name: es-1-Spain-67.159.47.235-443
+  - name: es-1-Spain-67.159.46.130-443
     type: vless
-    server: 67.159.47.235
+    server: 67.159.46.130
     port: 443
-    uuid: 0cb9bcbd-344f-478c-af69-1acda2b3c5d5
+    uuid: e140049c-7122-423e-aa3c-91dfafde9f18
     udp: true
     tls: true
     network: tcp
@@ -251,9 +251,9 @@ proxies:
       public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
       short-id: 3869d49a9a79e06a
     flow: xtls-rprx-vision
-  - name: ir-3-Iran-198.16.113.218-8443
+  - name: ir-3-Iran-50.7.245.202-8443
     type: vless
-    server: 198.16.113.218
+    server: 50.7.245.202
     port: 8443
     uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
     udp: true
@@ -288,25 +288,25 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-UnitedStates-50.7.245.220-2088
+      - us-1-UnitedStates-50.7.245.205-2088
       - us-1-UnitedStates-50.7.245.212-2088
-      - ca-1-Canada-50.7.245.211-2093
-      - ca-1-Canada-213.152.165.203-2093
-      - nl-1-Netherlands-213.152.165.206-443
-      - nl-1-Netherlands-213.152.165.204-2053
-      - fr-1-France-50.7.245.206-2053
-      - fr-1-France-50.7.245.213-2083
-      - de-1-Germany-50.7.156.122-443
+      - ca-1-Canada-50.7.245.202-2093
+      - ca-1-Canada-198.16.113.218-2093
+      - nl-1-Netherlands-213.152.165.196-2053
+      - nl-1-Netherlands-213.152.165.202-443
+      - fr-1-France-50.7.245.221-2053
+      - fr-1-France-50.7.245.211-2083
+      - de-1-Germany-50.7.86.202-2083
       - de-1-Germany-50.7.156.125-443
-      - sg-1-Singapore-67.159.49.28-2053
-      - sg-1-Singapore-50.7.252.50-2083
-      - jp-1-Japan-50.7.44.27-443
-      - jp-1-Japan-50.7.159.146-2053
+      - sg-1-Singapore-67.159.49.29-2053
+      - sg-1-Singapore-50.7.252.50-443
+      - jp-1-Japan-50.7.44.20-2083
+      - jp-1-Japan-50.7.44.29-2053
+      - hk-1-HongKong-50.7.44.27-2091
       - hk-1-HongKong-50.7.159.146-2091
-      - hk-1-HongKong-50.7.44.26-2091
-      - es-1-Spain-67.159.47.237-2083
-      - es-1-Spain-67.159.47.235-443
-      - ir-3-Iran-198.16.113.218-8443
+      - es-1-Spain-67.159.47.238-2053
+      - es-1-Spain-67.159.46.130-443
+      - ir-3-Iran-50.7.245.202-8443
       - ir-3-Iran-198.16.113.220-8443
   - name: 📍 CA
     type: url-test
@@ -316,8 +316,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - ca-1-Canada-50.7.245.211-2093
-      - ca-1-Canada-213.152.165.203-2093
+      - ca-1-Canada-50.7.245.202-2093
+      - ca-1-Canada-198.16.113.218-2093
   - name: 📍 DE
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -326,7 +326,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - de-1-Germany-50.7.156.122-443
+      - de-1-Germany-50.7.86.202-2083
       - de-1-Germany-50.7.156.125-443
   - name: 📍 ES
     type: url-test
@@ -336,8 +336,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - es-1-Spain-67.159.47.237-2083
-      - es-1-Spain-67.159.47.235-443
+      - es-1-Spain-67.159.47.238-2053
+      - es-1-Spain-67.159.46.130-443
   - name: 📍 FR
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -346,8 +346,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - fr-1-France-50.7.245.206-2053
-      - fr-1-France-50.7.245.213-2083
+      - fr-1-France-50.7.245.221-2053
+      - fr-1-France-50.7.245.211-2083
   - name: 📍 HK
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -356,8 +356,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
+      - hk-1-HongKong-50.7.44.27-2091
       - hk-1-HongKong-50.7.159.146-2091
-      - hk-1-HongKong-50.7.44.26-2091
   - name: 📍 IR
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -366,7 +366,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - ir-3-Iran-198.16.113.218-8443
+      - ir-3-Iran-50.7.245.202-8443
       - ir-3-Iran-198.16.113.220-8443
   - name: 📍 JP
     type: url-test
@@ -376,8 +376,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - jp-1-Japan-50.7.44.27-443
-      - jp-1-Japan-50.7.159.146-2053
+      - jp-1-Japan-50.7.44.20-2083
+      - jp-1-Japan-50.7.44.29-2053
   - name: 📍 NL
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -386,8 +386,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - nl-1-Netherlands-213.152.165.206-443
-      - nl-1-Netherlands-213.152.165.204-2053
+      - nl-1-Netherlands-213.152.165.196-2053
+      - nl-1-Netherlands-213.152.165.202-443
   - name: 📍 SG
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -396,8 +396,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - sg-1-Singapore-67.159.49.28-2053
-      - sg-1-Singapore-50.7.252.50-2083
+      - sg-1-Singapore-67.159.49.29-2053
+      - sg-1-Singapore-50.7.252.50-443
   - name: 📍 US
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -406,7 +406,7 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-UnitedStates-50.7.245.220-2088
+      - us-1-UnitedStates-50.7.245.205-2088
       - us-1-UnitedStates-50.7.245.212-2088
   - name: 🌏 asia
     type: url-test
@@ -416,13 +416,13 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - sg-1-Singapore-67.159.49.28-2053
-      - sg-1-Singapore-50.7.252.50-2083
-      - jp-1-Japan-50.7.44.27-443
-      - jp-1-Japan-50.7.159.146-2053
+      - sg-1-Singapore-67.159.49.29-2053
+      - sg-1-Singapore-50.7.252.50-443
+      - jp-1-Japan-50.7.44.20-2083
+      - jp-1-Japan-50.7.44.29-2053
+      - hk-1-HongKong-50.7.44.27-2091
       - hk-1-HongKong-50.7.159.146-2091
-      - hk-1-HongKong-50.7.44.26-2091
-      - ir-3-Iran-198.16.113.218-8443
+      - ir-3-Iran-50.7.245.202-8443
       - ir-3-Iran-198.16.113.220-8443
   - name: 🌎 west
     type: url-test
@@ -432,17 +432,17 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-UnitedStates-50.7.245.220-2088
+      - us-1-UnitedStates-50.7.245.205-2088
       - us-1-UnitedStates-50.7.245.212-2088
-      - ca-1-Canada-50.7.245.211-2093
-      - ca-1-Canada-213.152.165.203-2093
-      - nl-1-Netherlands-213.152.165.206-443
-      - nl-1-Netherlands-213.152.165.204-2053
-      - fr-1-France-50.7.245.206-2053
-      - fr-1-France-50.7.245.213-2083
-      - de-1-Germany-50.7.156.122-443
+      - ca-1-Canada-50.7.245.202-2093
+      - ca-1-Canada-198.16.113.218-2093
+      - nl-1-Netherlands-213.152.165.196-2053
+      - nl-1-Netherlands-213.152.165.202-443
+      - fr-1-France-50.7.245.221-2053
+      - fr-1-France-50.7.245.211-2083
+      - de-1-Germany-50.7.86.202-2083
       - de-1-Germany-50.7.156.125-443
-      - es-1-Spain-67.159.47.237-2083
-      - es-1-Spain-67.159.47.235-443
+      - es-1-Spain-67.159.47.238-2053
+      - es-1-Spain-67.159.46.130-443
 rules:
   - MATCH,auto
