@@ -11,4 +11,3 @@ IR    2 条  by-region/ir.txt
 JP    2 条  by-region/jp.txt
 NL    2 条  by-region/nl.txt
 SG    2 条  by-region/sg.txt
-US    2 条  by-region/us.txt
