@@ -3,153 +3,153 @@
     "id": "us-1",
     "name": "United States",
     "country": "US",
-    "ip": "50.7.245.202",
+    "ip": "198.16.113.222",
     "port": 2088,
-    "ms": 209
+    "ms": 240
   },
   {
     "id": "us-1",
     "name": "United States",
     "country": "US",
-    "ip": "50.7.245.219",
-    "port": 2088,
-    "ms": 209
-  },
-  {
-    "id": "ca-1",
-    "name": "Canada",
-    "country": "CA",
     "ip": "50.7.245.205",
-    "port": 2093,
-    "ms": 169
+    "port": 2088,
+    "ms": 243
   },
   {
     "id": "ca-1",
     "name": "Canada",
     "country": "CA",
-    "ip": "50.7.245.220",
+    "ip": "198.16.113.218",
     "port": 2093,
-    "ms": 170
+    "ms": 201
+  },
+  {
+    "id": "ca-1",
+    "name": "Canada",
+    "country": "CA",
+    "ip": "50.7.245.211",
+    "port": 2093,
+    "ms": 202
   },
   {
     "id": "nl-1",
     "name": "Netherlands",
     "country": "NL",
-    "ip": "213.152.165.203",
-    "port": 443,
-    "ms": 98
+    "ip": "213.152.165.194",
+    "port": 2083,
+    "ms": 118
   },
   {
     "id": "nl-1",
     "name": "Netherlands",
     "country": "NL",
-    "ip": "213.152.165.203",
-    "port": 2053,
-    "ms": 98
+    "ip": "213.152.165.197",
+    "port": 2083,
+    "ms": 118
   },
   {
     "id": "fr-1",
     "name": "France",
     "country": "FR",
-    "ip": "198.16.113.219",
+    "ip": "50.7.245.212",
     "port": 2053,
-    "ms": 79
+    "ms": 110
   },
   {
     "id": "fr-1",
     "name": "France",
     "country": "FR",
-    "ip": "50.7.245.220",
-    "port": 2053,
-    "ms": 79
+    "ip": "198.16.113.222",
+    "port": 2083,
+    "ms": 110
   },
   {
     "id": "de-1",
     "name": "Germany",
     "country": "DE",
-    "ip": "50.7.86.213",
-    "port": 443,
-    "ms": 86
+    "ip": "50.7.86.211",
+    "port": 2083,
+    "ms": 115
   },
   {
     "id": "de-1",
     "name": "Germany",
     "country": "DE",
-    "ip": "50.7.156.125",
+    "ip": "50.7.156.123",
+    "port": 2053,
+    "ms": 116
+  },
+  {
+    "id": "sg-1",
+    "name": "Singapore",
+    "country": "SG",
+    "ip": "67.159.49.36",
+    "port": 2083,
+    "ms": 203
+  },
+  {
+    "id": "sg-1",
+    "name": "Singapore",
+    "country": "SG",
+    "ip": "67.159.49.28",
     "port": 443,
-    "ms": 86
-  },
-  {
-    "id": "sg-1",
-    "name": "Singapore",
-    "country": "SG",
-    "ip": "50.7.252.50",
-    "port": 2053,
-    "ms": 224
-  },
-  {
-    "id": "sg-1",
-    "name": "Singapore",
-    "country": "SG",
-    "ip": "50.7.252.50",
-    "port": 2083,
-    "ms": 224
+    "ms": 204
   },
   {
     "id": "jp-1",
     "name": "Japan",
     "country": "JP",
-    "ip": "50.7.44.18",
-    "port": 2053,
-    "ms": 165
+    "ip": "50.7.44.29",
+    "port": 2083,
+    "ms": 144
   },
   {
     "id": "jp-1",
     "name": "Japan",
     "country": "JP",
-    "ip": "50.7.44.18",
+    "ip": "50.7.44.27",
+    "port": 443,
+    "ms": 145
+  },
+  {
+    "id": "hk-1",
+    "name": "Hong Kong",
+    "country": "HK",
+    "ip": "50.7.44.29",
+    "port": 2091,
+    "ms": 189
+  },
+  {
+    "id": "hk-1",
+    "name": "Hong Kong",
+    "country": "HK",
+    "ip": "50.7.44.19",
+    "port": 2091,
+    "ms": 191
+  },
+  {
+    "id": "es-1",
+    "name": "Spain",
+    "country": "ES",
+    "ip": "67.159.46.132",
     "port": 2083,
-    "ms": 165
-  },
-  {
-    "id": "hk-1",
-    "name": "Hong Kong",
-    "country": "HK",
-    "ip": "50.7.159.146",
-    "port": 2091,
-    "ms": 210
-  },
-  {
-    "id": "hk-1",
-    "name": "Hong Kong",
-    "country": "HK",
-    "ip": "50.7.44.28",
-    "port": 2091,
-    "ms": 210
+    "ms": 145
   },
   {
     "id": "es-1",
     "name": "Spain",
     "country": "ES",
     "ip": "67.159.47.238",
-    "port": 443,
-    "ms": 116
-  },
-  {
-    "id": "es-1",
-    "name": "Spain",
-    "country": "ES",
-    "ip": "67.159.46.133",
-    "port": 2053,
-    "ms": 116
+    "port": 2083,
+    "ms": 145
   },
   {
     "id": "ir-3",
     "name": "Iran",
     "country": "IR",
-    "ip": "198.16.113.219",
+    "ip": "198.16.113.222",
     "port": 8443,
-    "ms": 79
+    "ms": 113
   },
   {
     "id": "ir-3",
@@ -157,6 +157,6 @@
     "country": "IR",
     "ip": "198.16.113.218",
     "port": 8443,
-    "ms": 82
+    "ms": 115
   }
 ]
