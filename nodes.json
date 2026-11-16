@@ -3,121 +3,121 @@
     "id": "us-1",
     "name": "United States",
     "country": "US",
-    "ip": "50.7.245.206",
+    "ip": "50.7.44.26",
     "port": 2088,
-    "ms": 241
+    "ms": 252
   },
   {
     "id": "us-1",
     "name": "United States",
     "country": "US",
-    "ip": "50.7.245.202",
+    "ip": "50.7.44.19",
     "port": 2088,
-    "ms": 241
+    "ms": 253
   },
   {
     "id": "ca-1",
     "name": "Canada",
     "country": "CA",
-    "ip": "198.16.113.218",
+    "ip": "50.7.245.213",
     "port": 2093,
-    "ms": 201
+    "ms": 230
   },
   {
     "id": "ca-1",
     "name": "Canada",
     "country": "CA",
-    "ip": "50.7.245.214",
+    "ip": "50.7.245.220",
     "port": 2093,
-    "ms": 201
+    "ms": 231
   },
   {
     "id": "nl-1",
     "name": "Netherlands",
     "country": "NL",
-    "ip": "213.152.165.195",
-    "port": 443,
-    "ms": 119
-  },
-  {
-    "id": "nl-1",
-    "name": "Netherlands",
-    "country": "NL",
-    "ip": "213.152.165.194",
-    "port": 2053,
-    "ms": 120
-  },
-  {
-    "id": "fr-1",
-    "name": "France",
-    "country": "FR",
-    "ip": "50.7.245.214",
-    "port": 2053,
-    "ms": 109
-  },
-  {
-    "id": "fr-1",
-    "name": "France",
-    "country": "FR",
-    "ip": "50.7.245.218",
+    "ip": "213.152.165.201",
     "port": 2083,
-    "ms": 110
+    "ms": 146
+  },
+  {
+    "id": "nl-1",
+    "name": "Netherlands",
+    "country": "NL",
+    "ip": "213.152.165.200",
+    "port": 2053,
+    "ms": 146
+  },
+  {
+    "id": "fr-1",
+    "name": "France",
+    "country": "FR",
+    "ip": "50.7.245.219",
+    "port": 443,
+    "ms": 141
+  },
+  {
+    "id": "fr-1",
+    "name": "France",
+    "country": "FR",
+    "ip": "50.7.245.210",
+    "port": 2083,
+    "ms": 141
+  },
+  {
+    "id": "de-1",
+    "name": "Germany",
+    "country": "DE",
+    "ip": "50.7.86.206",
+    "port": 2053,
+    "ms": 148
   },
   {
     "id": "de-1",
     "name": "Germany",
     "country": "DE",
     "ip": "50.7.86.211",
-    "port": 2083,
-    "ms": 116
-  },
-  {
-    "id": "de-1",
-    "name": "Germany",
-    "country": "DE",
-    "ip": "50.7.156.123",
     "port": 443,
-    "ms": 116
+    "ms": 148
   },
   {
     "id": "sg-1",
     "name": "Singapore",
     "country": "SG",
-    "ip": "67.159.49.34",
-    "port": 443,
-    "ms": 204
-  },
-  {
-    "id": "sg-1",
-    "name": "Singapore",
-    "country": "SG",
-    "ip": "67.159.49.27",
-    "port": 2083,
-    "ms": 205
-  },
-  {
-    "id": "jp-1",
-    "name": "Japan",
-    "country": "JP",
-    "ip": "50.7.159.146",
+    "ip": "67.159.49.28",
     "port": 2053,
-    "ms": 145
+    "ms": 175
+  },
+  {
+    "id": "sg-1",
+    "name": "Singapore",
+    "country": "SG",
+    "ip": "67.159.49.29",
+    "port": 443,
+    "ms": 175
   },
   {
     "id": "jp-1",
     "name": "Japan",
     "country": "JP",
-    "ip": "50.7.159.146",
+    "ip": "50.7.44.28",
+    "port": 2053,
+    "ms": 111
+  },
+  {
+    "id": "jp-1",
+    "name": "Japan",
+    "country": "JP",
+    "ip": "50.7.44.28",
     "port": 2083,
-    "ms": 145
+    "ms": 111
   },
   {
     "id": "hk-1",
     "name": "Hong Kong",
     "country": "HK",
-    "ip": "50.7.44.30",
+    "ip": "50.7.44.27",
     "port": 2091,
-    "ms": 192
+    "ms": 157
   },
   {
     "id": "hk-1",
@@ -125,23 +125,23 @@
     "country": "HK",
     "ip": "50.7.44.26",
     "port": 2091,
-    "ms": 192
+    "ms": 158
   },
   {
     "id": "es-1",
     "name": "Spain",
     "country": "ES",
     "ip": "67.159.46.132",
-    "port": 2053,
-    "ms": 145
+    "port": 2083,
+    "ms": 172
   },
   {
     "id": "es-1",
     "name": "Spain",
     "country": "ES",
-    "ip": "67.159.46.131",
+    "ip": "67.159.46.130",
     "port": 443,
-    "ms": 147
+    "ms": 172
   },
   {
     "id": "ir-3",
@@ -149,14 +149,14 @@
     "country": "IR",
     "ip": "198.16.113.220",
     "port": 8443,
-    "ms": 113
+    "ms": 141
   },
   {
     "id": "ir-3",
     "name": "Iran",
     "country": "IR",
-    "ip": "198.16.113.221",
+    "ip": "198.16.113.222",
     "port": 8443,
-    "ms": 116
+    "ms": 141
   }
 ]
