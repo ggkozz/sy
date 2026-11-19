@@ -30,10 +30,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "us-1-UnitedStates-50.7.44.19-2088",
-      "server": "50.7.44.19",
+      "tag": "us-1-UnitedStates-50.7.44.21-2088",
+      "server": "50.7.44.21",
       "server_port": 2088,
-      "uuid": "3279dbf1-2e5f-41a2-a1e6-a76237d3d253",
+      "uuid": "1e9e4044-8ddb-4d18-a7a0-ef725f8e0ee2",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -52,10 +52,10 @@
     },
     {
       "type": "vless",
-      "tag": "us-1-UnitedStates-50.7.44.20-2088",
-      "server": "50.7.44.20",
+      "tag": "us-1-UnitedStates-50.7.245.221-2088",
+      "server": "50.7.245.221",
       "server_port": 2088,
-      "uuid": "3279dbf1-2e5f-41a2-a1e6-a76237d3d253",
+      "uuid": "1e9e4044-8ddb-4d18-a7a0-ef725f8e0ee2",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -74,10 +74,10 @@
     },
     {
       "type": "vless",
-      "tag": "ca-1-Canada-50.7.245.220-2093",
-      "server": "50.7.245.220",
+      "tag": "ca-1-Canada-50.7.245.214-2093",
+      "server": "50.7.245.214",
       "server_port": 2093,
-      "uuid": "8eb282af-e0c1-42af-aae4-10b6ba66fbb8",
+      "uuid": "2b908039-95a8-4dfb-b76f-5771c66730ad",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -99,7 +99,7 @@
       "tag": "ca-1-Canada-50.7.245.204-2093",
       "server": "50.7.245.204",
       "server_port": 2093,
-      "uuid": "8eb282af-e0c1-42af-aae4-10b6ba66fbb8",
+      "uuid": "2b908039-95a8-4dfb-b76f-5771c66730ad",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -118,10 +118,10 @@
     },
     {
       "type": "vless",
-      "tag": "nl-1-Netherlands-213.152.165.200-443",
-      "server": "213.152.165.200",
-      "server_port": 443,
-      "uuid": "45be9f2a-69fe-4a9a-98f9-12c77cd61e6d",
+      "tag": "nl-1-Netherlands-213.152.165.203-2053",
+      "server": "213.152.165.203",
+      "server_port": 2053,
+      "uuid": "720f4234-884c-41ef-aef8-03b2d5d2fb0d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -140,10 +140,10 @@
     },
     {
       "type": "vless",
-      "tag": "nl-1-Netherlands-213.152.165.199-2053",
-      "server": "213.152.165.199",
+      "tag": "nl-1-Netherlands-213.152.165.205-2053",
+      "server": "213.152.165.205",
       "server_port": 2053,
-      "uuid": "45be9f2a-69fe-4a9a-98f9-12c77cd61e6d",
+      "uuid": "720f4234-884c-41ef-aef8-03b2d5d2fb0d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -165,7 +165,7 @@
       "tag": "fr-1-France-50.7.245.220-443",
       "server": "50.7.245.220",
       "server_port": 443,
-      "uuid": "767404ff-001b-405b-85cf-8fa8e9634374",
+      "uuid": "a6edea80-5b8c-4cdd-a21b-e12e7a24bb00",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -187,7 +187,7 @@
       "tag": "fr-1-France-50.7.245.220-2053",
       "server": "50.7.245.220",
       "server_port": 2053,
-      "uuid": "767404ff-001b-405b-85cf-8fa8e9634374",
+      "uuid": "a6edea80-5b8c-4cdd-a21b-e12e7a24bb00",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -206,10 +206,10 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-Germany-50.7.86.203-2053",
-      "server": "50.7.86.203",
-      "server_port": 2053,
-      "uuid": "d28846f9-b269-47bd-807d-0e0499789c36",
+      "tag": "de-1-Germany-50.7.156.126-2083",
+      "server": "50.7.156.126",
+      "server_port": 2083,
+      "uuid": "dd6ee054-a8ac-4266-a68c-5967affa517f",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -228,10 +228,10 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-Germany-50.7.156.122-2053",
+      "tag": "de-1-Germany-50.7.156.122-443",
       "server": "50.7.156.122",
-      "server_port": 2053,
-      "uuid": "d28846f9-b269-47bd-807d-0e0499789c36",
+      "server_port": 443,
+      "uuid": "dd6ee054-a8ac-4266-a68c-5967affa517f",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -253,7 +253,7 @@
       "tag": "sg-1-Singapore-67.159.49.35-443",
       "server": "67.159.49.35",
       "server_port": 443,
-      "uuid": "07705de6-16e8-41e3-936d-b7142f9ea1f2",
+      "uuid": "f4f2e0c2-8d9c-4219-b2ae-60342cd10599",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -272,10 +272,10 @@
     },
     {
       "type": "vless",
-      "tag": "sg-1-Singapore-67.159.49.27-2053",
+      "tag": "sg-1-Singapore-67.159.49.27-2083",
       "server": "67.159.49.27",
-      "server_port": 2053,
-      "uuid": "07705de6-16e8-41e3-936d-b7142f9ea1f2",
+      "server_port": 2083,
+      "uuid": "f4f2e0c2-8d9c-4219-b2ae-60342cd10599",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -297,7 +297,7 @@
       "tag": "jp-1-Japan-50.7.44.22-443",
       "server": "50.7.44.22",
       "server_port": 443,
-      "uuid": "24cbc3d3-c38c-49d6-b764-b19740dd992d",
+      "uuid": "2557e273-6936-417c-a069-9c8eea8b8221",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -316,10 +316,10 @@
     },
     {
       "type": "vless",
-      "tag": "jp-1-Japan-50.7.44.22-2053",
-      "server": "50.7.44.22",
+      "tag": "jp-1-Japan-50.7.44.28-2053",
+      "server": "50.7.44.28",
       "server_port": 2053,
-      "uuid": "24cbc3d3-c38c-49d6-b764-b19740dd992d",
+      "uuid": "2557e273-6936-417c-a069-9c8eea8b8221",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -338,10 +338,10 @@
     },
     {
       "type": "vless",
-      "tag": "hk-1-HongKong-50.7.44.21-2091",
-      "server": "50.7.44.21",
+      "tag": "hk-1-HongKong-50.7.44.30-2091",
+      "server": "50.7.44.30",
       "server_port": 2091,
-      "uuid": "994205d1-5298-4d31-9962-bdf1c4f51dc0",
+      "uuid": "271a69a7-4ef0-4802-b8b2-f7bf3adda49d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -360,10 +360,10 @@
     },
     {
       "type": "vless",
-      "tag": "hk-1-HongKong-50.7.159.146-2091",
-      "server": "50.7.159.146",
+      "tag": "hk-1-HongKong-50.7.44.26-2091",
+      "server": "50.7.44.26",
       "server_port": 2091,
-      "uuid": "994205d1-5298-4d31-9962-bdf1c4f51dc0",
+      "uuid": "271a69a7-4ef0-4802-b8b2-f7bf3adda49d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -382,10 +382,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-Spain-67.159.46.134-2053",
-      "server": "67.159.46.134",
+      "tag": "es-1-Spain-67.159.47.234-2053",
+      "server": "67.159.47.234",
       "server_port": 2053,
-      "uuid": "4f7980a6-d3e7-4beb-b5e8-51f670c41e52",
+      "uuid": "a73af7ca-5968-4388-a559-1cc269f3905d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -404,10 +404,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-Spain-67.159.47.237-443",
+      "tag": "es-1-Spain-67.159.47.237-2053",
       "server": "67.159.47.237",
-      "server_port": 443,
-      "uuid": "4f7980a6-d3e7-4beb-b5e8-51f670c41e52",
+      "server_port": 2053,
+      "uuid": "a73af7ca-5968-4388-a559-1cc269f3905d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -426,10 +426,10 @@
     },
     {
       "type": "vless",
-      "tag": "ir-3-Iran-50.7.245.202-8443",
-      "server": "50.7.245.202",
+      "tag": "ir-3-Iran-198.16.113.221-8443",
+      "server": "198.16.113.221",
       "server_port": 8443,
-      "uuid": "9c17a1a5-c75d-4fea-835e-f00037f936f1",
+      "uuid": "8ccfa591-1647-4b9e-a810-2341f59b6693",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -448,10 +448,10 @@
     },
     {
       "type": "vless",
-      "tag": "ir-3-Iran-198.16.113.222-8443",
-      "server": "198.16.113.222",
+      "tag": "ir-3-Iran-198.16.113.220-8443",
+      "server": "198.16.113.220",
       "server_port": 8443,
-      "uuid": "9c17a1a5-c75d-4fea-835e-f00037f936f1",
+      "uuid": "8ccfa591-1647-4b9e-a810-2341f59b6693",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -472,26 +472,26 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "us-1-UnitedStates-50.7.44.19-2088",
-        "us-1-UnitedStates-50.7.44.20-2088",
-        "ca-1-Canada-50.7.245.220-2093",
+        "us-1-UnitedStates-50.7.44.21-2088",
+        "us-1-UnitedStates-50.7.245.221-2088",
+        "ca-1-Canada-50.7.245.214-2093",
         "ca-1-Canada-50.7.245.204-2093",
-        "nl-1-Netherlands-213.152.165.200-443",
-        "nl-1-Netherlands-213.152.165.199-2053",
+        "nl-1-Netherlands-213.152.165.203-2053",
+        "nl-1-Netherlands-213.152.165.205-2053",
         "fr-1-France-50.7.245.220-443",
         "fr-1-France-50.7.245.220-2053",
-        "de-1-Germany-50.7.86.203-2053",
-        "de-1-Germany-50.7.156.122-2053",
+        "de-1-Germany-50.7.156.126-2083",
+        "de-1-Germany-50.7.156.122-443",
         "sg-1-Singapore-67.159.49.35-443",
-        "sg-1-Singapore-67.159.49.27-2053",
+        "sg-1-Singapore-67.159.49.27-2083",
         "jp-1-Japan-50.7.44.22-443",
-        "jp-1-Japan-50.7.44.22-2053",
-        "hk-1-HongKong-50.7.44.21-2091",
-        "hk-1-HongKong-50.7.159.146-2091",
-        "es-1-Spain-67.159.46.134-2053",
-        "es-1-Spain-67.159.47.237-443",
-        "ir-3-Iran-50.7.245.202-8443",
-        "ir-3-Iran-198.16.113.222-8443"
+        "jp-1-Japan-50.7.44.28-2053",
+        "hk-1-HongKong-50.7.44.30-2091",
+        "hk-1-HongKong-50.7.44.26-2091",
+        "es-1-Spain-67.159.47.234-2053",
+        "es-1-Spain-67.159.47.237-2053",
+        "ir-3-Iran-198.16.113.221-8443",
+        "ir-3-Iran-198.16.113.220-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -502,7 +502,7 @@
       "type": "urltest",
       "tag": "r-CA",
       "outbounds": [
-        "ca-1-Canada-50.7.245.220-2093",
+        "ca-1-Canada-50.7.245.214-2093",
         "ca-1-Canada-50.7.245.204-2093"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -514,8 +514,8 @@
       "type": "urltest",
       "tag": "r-DE",
       "outbounds": [
-        "de-1-Germany-50.7.86.203-2053",
-        "de-1-Germany-50.7.156.122-2053"
+        "de-1-Germany-50.7.156.126-2083",
+        "de-1-Germany-50.7.156.122-443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -526,8 +526,8 @@
       "type": "urltest",
       "tag": "r-ES",
       "outbounds": [
-        "es-1-Spain-67.159.46.134-2053",
-        "es-1-Spain-67.159.47.237-443"
+        "es-1-Spain-67.159.47.234-2053",
+        "es-1-Spain-67.159.47.237-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -550,8 +550,8 @@
       "type": "urltest",
       "tag": "r-HK",
       "outbounds": [
-        "hk-1-HongKong-50.7.44.21-2091",
-        "hk-1-HongKong-50.7.159.146-2091"
+        "hk-1-HongKong-50.7.44.30-2091",
+        "hk-1-HongKong-50.7.44.26-2091"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -562,8 +562,8 @@
       "type": "urltest",
       "tag": "r-IR",
       "outbounds": [
-        "ir-3-Iran-50.7.245.202-8443",
-        "ir-3-Iran-198.16.113.222-8443"
+        "ir-3-Iran-198.16.113.221-8443",
+        "ir-3-Iran-198.16.113.220-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -575,7 +575,7 @@
       "tag": "r-JP",
       "outbounds": [
         "jp-1-Japan-50.7.44.22-443",
-        "jp-1-Japan-50.7.44.22-2053"
+        "jp-1-Japan-50.7.44.28-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -586,8 +586,8 @@
       "type": "urltest",
       "tag": "r-NL",
       "outbounds": [
-        "nl-1-Netherlands-213.152.165.200-443",
-        "nl-1-Netherlands-213.152.165.199-2053"
+        "nl-1-Netherlands-213.152.165.203-2053",
+        "nl-1-Netherlands-213.152.165.205-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -599,7 +599,7 @@
       "tag": "r-SG",
       "outbounds": [
         "sg-1-Singapore-67.159.49.35-443",
-        "sg-1-Singapore-67.159.49.27-2053"
+        "sg-1-Singapore-67.159.49.27-2083"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -610,8 +610,8 @@
       "type": "urltest",
       "tag": "r-US",
       "outbounds": [
-        "us-1-UnitedStates-50.7.44.19-2088",
-        "us-1-UnitedStates-50.7.44.20-2088"
+        "us-1-UnitedStates-50.7.44.21-2088",
+        "us-1-UnitedStates-50.7.245.221-2088"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -623,13 +623,13 @@
       "tag": "asia",
       "outbounds": [
         "sg-1-Singapore-67.159.49.35-443",
-        "sg-1-Singapore-67.159.49.27-2053",
+        "sg-1-Singapore-67.159.49.27-2083",
         "jp-1-Japan-50.7.44.22-443",
-        "jp-1-Japan-50.7.44.22-2053",
-        "hk-1-HongKong-50.7.44.21-2091",
-        "hk-1-HongKong-50.7.159.146-2091",
-        "ir-3-Iran-50.7.245.202-8443",
-        "ir-3-Iran-198.16.113.222-8443"
+        "jp-1-Japan-50.7.44.28-2053",
+        "hk-1-HongKong-50.7.44.30-2091",
+        "hk-1-HongKong-50.7.44.26-2091",
+        "ir-3-Iran-198.16.113.221-8443",
+        "ir-3-Iran-198.16.113.220-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -640,18 +640,18 @@
       "type": "urltest",
       "tag": "west",
       "outbounds": [
-        "us-1-UnitedStates-50.7.44.19-2088",
-        "us-1-UnitedStates-50.7.44.20-2088",
-        "ca-1-Canada-50.7.245.220-2093",
+        "us-1-UnitedStates-50.7.44.21-2088",
+        "us-1-UnitedStates-50.7.245.221-2088",
+        "ca-1-Canada-50.7.245.214-2093",
         "ca-1-Canada-50.7.245.204-2093",
-        "nl-1-Netherlands-213.152.165.200-443",
-        "nl-1-Netherlands-213.152.165.199-2053",
+        "nl-1-Netherlands-213.152.165.203-2053",
+        "nl-1-Netherlands-213.152.165.205-2053",
         "fr-1-France-50.7.245.220-443",
         "fr-1-France-50.7.245.220-2053",
-        "de-1-Germany-50.7.86.203-2053",
-        "de-1-Germany-50.7.156.122-2053",
-        "es-1-Spain-67.159.46.134-2053",
-        "es-1-Spain-67.159.47.237-443"
+        "de-1-Germany-50.7.156.126-2083",
+        "de-1-Germany-50.7.156.122-443",
+        "es-1-Spain-67.159.47.234-2053",
+        "es-1-Spain-67.159.47.237-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
