@@ -30,10 +30,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "us-1-UnitedStates-198.16.113.219-2088",
-      "server": "198.16.113.219",
+      "tag": "us-1-UnitedStates-50.7.245.206-2088",
+      "server": "50.7.245.206",
       "server_port": 2088,
-      "uuid": "0909e284-6f77-40c3-986e-2f3f72a64c8f",
+      "uuid": "48fadd33-5991-4801-9058-bff55da872b4",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -52,32 +52,10 @@
     },
     {
       "type": "vless",
-      "tag": "us-1-UnitedStates-50.7.245.203-2088",
-      "server": "50.7.245.203",
-      "server_port": 2088,
-      "uuid": "0909e284-6f77-40c3-986e-2f3f72a64c8f",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo",
-          "short_id": "66d62ef550107695"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "ca-1-Canada-50.7.245.213-2093",
+      "tag": "us-1-UnitedStates-50.7.245.213-2088",
       "server": "50.7.245.213",
-      "server_port": 2093,
-      "uuid": "d738c529-2d05-4da1-b13f-f862e449b8a0",
+      "server_port": 2088,
+      "uuid": "48fadd33-5991-4801-9058-bff55da872b4",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -88,8 +66,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-          "short_id": "8a9725533854a7e8"
+          "public_key": "bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo",
+          "short_id": "66d62ef550107695"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -99,7 +77,7 @@
       "tag": "ca-1-Canada-198.16.113.220-2093",
       "server": "198.16.113.220",
       "server_port": 2093,
-      "uuid": "d738c529-2d05-4da1-b13f-f862e449b8a0",
+      "uuid": "98523d71-1ab7-4161-a3db-ee6dae5f2d13",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -118,10 +96,10 @@
     },
     {
       "type": "vless",
-      "tag": "nl-1-Netherlands-213.152.165.206-443",
-      "server": "213.152.165.206",
-      "server_port": 443,
-      "uuid": "501e6f9b-ae62-497a-8312-29170c625a6f",
+      "tag": "ca-1-Canada-50.7.245.221-2093",
+      "server": "50.7.245.221",
+      "server_port": 2093,
+      "uuid": "98523d71-1ab7-4161-a3db-ee6dae5f2d13",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -132,40 +110,62 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
-          "short_id": "906609ffc9e8d9fe"
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
         }
       },
       "flow": "xtls-rprx-vision"
     },
     {
       "type": "vless",
-      "tag": "nl-1-Netherlands-213.152.165.198-443",
-      "server": "213.152.165.198",
-      "server_port": 443,
-      "uuid": "501e6f9b-ae62-497a-8312-29170c625a6f",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
-          "short_id": "906609ffc9e8d9fe"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "fr-1-France-50.7.245.206-2053",
-      "server": "50.7.245.206",
+      "tag": "nl-1-Netherlands-213.152.165.194-2053",
+      "server": "213.152.165.194",
       "server_port": 2053,
-      "uuid": "d5dd653e-b1d9-41de-849e-2514e2c097ec",
+      "uuid": "b31d471a-7d2c-436e-a84c-4a7e80159178",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
+          "short_id": "906609ffc9e8d9fe"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "nl-1-Netherlands-213.152.165.202-443",
+      "server": "213.152.165.202",
+      "server_port": 443,
+      "uuid": "b31d471a-7d2c-436e-a84c-4a7e80159178",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
+          "short_id": "906609ffc9e8d9fe"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "fr-1-France-198.16.113.220-2083",
+      "server": "198.16.113.220",
+      "server_port": 2083,
+      "uuid": "7b022e42-da41-4307-8283-a31e9710cd55",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -184,10 +184,10 @@
     },
     {
       "type": "vless",
-      "tag": "fr-1-France-50.7.245.202-443",
-      "server": "50.7.245.202",
-      "server_port": 443,
-      "uuid": "d5dd653e-b1d9-41de-849e-2514e2c097ec",
+      "tag": "fr-1-France-50.7.245.221-2053",
+      "server": "50.7.245.221",
+      "server_port": 2053,
+      "uuid": "7b022e42-da41-4307-8283-a31e9710cd55",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -206,10 +206,32 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-Germany-50.7.86.210-443",
-      "server": "50.7.86.210",
+      "tag": "de-1-Germany-50.7.156.124-2053",
+      "server": "50.7.156.124",
+      "server_port": 2053,
+      "uuid": "d9f776fe-92dd-4203-88e4-a277c79d9695",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs",
+          "short_id": "55986a94e2228791"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "de-1-Germany-50.7.86.203-443",
+      "server": "50.7.86.203",
       "server_port": 443,
-      "uuid": "14327b69-88d2-4945-936f-7da6241d3988",
+      "uuid": "d9f776fe-92dd-4203-88e4-a277c79d9695",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -228,54 +250,10 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-Germany-50.7.156.122-2083",
-      "server": "50.7.156.122",
-      "server_port": 2083,
-      "uuid": "14327b69-88d2-4945-936f-7da6241d3988",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs",
-          "short_id": "55986a94e2228791"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "sg-1-Singapore-67.159.49.26-2083",
-      "server": "67.159.49.26",
-      "server_port": 2083,
-      "uuid": "682dffc7-778a-47af-8ef5-0f47e09fa696",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
-          "short_id": "deccc6fac1ddb0ff"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "sg-1-Singapore-50.7.252.50-443",
+      "tag": "sg-1-Singapore-50.7.252.50-2053",
       "server": "50.7.252.50",
-      "server_port": 443,
-      "uuid": "682dffc7-778a-47af-8ef5-0f47e09fa696",
+      "server_port": 2053,
+      "uuid": "845a5065-69b9-4ae7-9baa-45b2f6ad2831",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -288,6 +266,50 @@
           "enabled": true,
           "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
           "short_id": "deccc6fac1ddb0ff"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "sg-1-Singapore-67.159.49.30-2053",
+      "server": "67.159.49.30",
+      "server_port": 2053,
+      "uuid": "845a5065-69b9-4ae7-9baa-45b2f6ad2831",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
+          "short_id": "deccc6fac1ddb0ff"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "jp-1-Japan-50.7.44.28-443",
+      "server": "50.7.44.28",
+      "server_port": 443,
+      "uuid": "297d9a0b-16fd-402e-95f5-7ebc09254665",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk",
+          "short_id": "bb472a184677af64"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -297,7 +319,7 @@
       "tag": "jp-1-Japan-50.7.44.19-443",
       "server": "50.7.44.19",
       "server_port": 443,
-      "uuid": "45647583-0edc-4a0d-af77-0960c6663a94",
+      "uuid": "297d9a0b-16fd-402e-95f5-7ebc09254665",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -316,32 +338,10 @@
     },
     {
       "type": "vless",
-      "tag": "jp-1-Japan-50.7.44.30-443",
-      "server": "50.7.44.30",
-      "server_port": 443,
-      "uuid": "45647583-0edc-4a0d-af77-0960c6663a94",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk",
-          "short_id": "bb472a184677af64"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "hk-1-HongKong-50.7.44.28-2091",
-      "server": "50.7.44.28",
+      "tag": "hk-1-HongKong-50.7.44.20-2091",
+      "server": "50.7.44.20",
       "server_port": 2091,
-      "uuid": "26e31beb-c5b2-448b-b3cc-c2d4d247dacb",
+      "uuid": "7aeb1e1a-a2a4-4eed-a3fc-a8807a79da19",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -360,10 +360,10 @@
     },
     {
       "type": "vless",
-      "tag": "hk-1-HongKong-50.7.44.26-2091",
-      "server": "50.7.44.26",
+      "tag": "hk-1-HongKong-50.7.44.21-2091",
+      "server": "50.7.44.21",
       "server_port": 2091,
-      "uuid": "26e31beb-c5b2-448b-b3cc-c2d4d247dacb",
+      "uuid": "7aeb1e1a-a2a4-4eed-a3fc-a8807a79da19",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -382,10 +382,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-Spain-67.159.46.133-2083",
-      "server": "67.159.46.133",
-      "server_port": 2083,
-      "uuid": "79537c80-98a4-420a-b7e5-46b6554a1108",
+      "tag": "es-1-Spain-67.159.47.238-2053",
+      "server": "67.159.47.238",
+      "server_port": 2053,
+      "uuid": "30803201-0fbc-440b-af9e-206bd99a59bb",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -404,10 +404,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-Spain-67.159.47.237-443",
-      "server": "67.159.47.237",
-      "server_port": 443,
-      "uuid": "79537c80-98a4-420a-b7e5-46b6554a1108",
+      "tag": "es-1-Spain-67.159.47.234-2053",
+      "server": "67.159.47.234",
+      "server_port": 2053,
+      "uuid": "30803201-0fbc-440b-af9e-206bd99a59bb",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -426,10 +426,10 @@
     },
     {
       "type": "vless",
-      "tag": "ir-3-Iran-198.16.113.218-8443",
-      "server": "198.16.113.218",
+      "tag": "ir-3-Iran-198.16.113.222-8443",
+      "server": "198.16.113.222",
       "server_port": 8443,
-      "uuid": "a2826d3f-d1ca-4f12-994e-038706b99b73",
+      "uuid": "a59a40d3-0088-4b0d-a422-d0087f8b5582",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -451,7 +451,7 @@
       "tag": "ir-3-Iran-50.7.245.202-8443",
       "server": "50.7.245.202",
       "server_port": 8443,
-      "uuid": "a2826d3f-d1ca-4f12-994e-038706b99b73",
+      "uuid": "a59a40d3-0088-4b0d-a422-d0087f8b5582",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -472,25 +472,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "us-1-UnitedStates-198.16.113.219-2088",
-        "us-1-UnitedStates-50.7.245.203-2088",
-        "ca-1-Canada-50.7.245.213-2093",
+        "us-1-UnitedStates-50.7.245.206-2088",
+        "us-1-UnitedStates-50.7.245.213-2088",
         "ca-1-Canada-198.16.113.220-2093",
-        "nl-1-Netherlands-213.152.165.206-443",
-        "nl-1-Netherlands-213.152.165.198-443",
-        "fr-1-France-50.7.245.206-2053",
-        "fr-1-France-50.7.245.202-443",
-        "de-1-Germany-50.7.86.210-443",
-        "de-1-Germany-50.7.156.122-2083",
-        "sg-1-Singapore-67.159.49.26-2083",
-        "sg-1-Singapore-50.7.252.50-443",
+        "ca-1-Canada-50.7.245.221-2093",
+        "nl-1-Netherlands-213.152.165.194-2053",
+        "nl-1-Netherlands-213.152.165.202-443",
+        "fr-1-France-198.16.113.220-2083",
+        "fr-1-France-50.7.245.221-2053",
+        "de-1-Germany-50.7.156.124-2053",
+        "de-1-Germany-50.7.86.203-443",
+        "sg-1-Singapore-50.7.252.50-2053",
+        "sg-1-Singapore-67.159.49.30-2053",
+        "jp-1-Japan-50.7.44.28-443",
         "jp-1-Japan-50.7.44.19-443",
-        "jp-1-Japan-50.7.44.30-443",
-        "hk-1-HongKong-50.7.44.28-2091",
-        "hk-1-HongKong-50.7.44.26-2091",
-        "es-1-Spain-67.159.46.133-2083",
-        "es-1-Spain-67.159.47.237-443",
-        "ir-3-Iran-198.16.113.218-8443",
+        "hk-1-HongKong-50.7.44.20-2091",
+        "hk-1-HongKong-50.7.44.21-2091",
+        "es-1-Spain-67.159.47.238-2053",
+        "es-1-Spain-67.159.47.234-2053",
+        "ir-3-Iran-198.16.113.222-8443",
         "ir-3-Iran-50.7.245.202-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -502,8 +502,8 @@
       "type": "urltest",
       "tag": "r-CA",
       "outbounds": [
-        "ca-1-Canada-50.7.245.213-2093",
-        "ca-1-Canada-198.16.113.220-2093"
+        "ca-1-Canada-198.16.113.220-2093",
+        "ca-1-Canada-50.7.245.221-2093"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -514,8 +514,8 @@
       "type": "urltest",
       "tag": "r-DE",
       "outbounds": [
-        "de-1-Germany-50.7.86.210-443",
-        "de-1-Germany-50.7.156.122-2083"
+        "de-1-Germany-50.7.156.124-2053",
+        "de-1-Germany-50.7.86.203-443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -526,8 +526,8 @@
       "type": "urltest",
       "tag": "r-ES",
       "outbounds": [
-        "es-1-Spain-67.159.46.133-2083",
-        "es-1-Spain-67.159.47.237-443"
+        "es-1-Spain-67.159.47.238-2053",
+        "es-1-Spain-67.159.47.234-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -538,8 +538,8 @@
       "type": "urltest",
       "tag": "r-FR",
       "outbounds": [
-        "fr-1-France-50.7.245.206-2053",
-        "fr-1-France-50.7.245.202-443"
+        "fr-1-France-198.16.113.220-2083",
+        "fr-1-France-50.7.245.221-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -550,8 +550,8 @@
       "type": "urltest",
       "tag": "r-HK",
       "outbounds": [
-        "hk-1-HongKong-50.7.44.28-2091",
-        "hk-1-HongKong-50.7.44.26-2091"
+        "hk-1-HongKong-50.7.44.20-2091",
+        "hk-1-HongKong-50.7.44.21-2091"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -562,7 +562,7 @@
       "type": "urltest",
       "tag": "r-IR",
       "outbounds": [
-        "ir-3-Iran-198.16.113.218-8443",
+        "ir-3-Iran-198.16.113.222-8443",
         "ir-3-Iran-50.7.245.202-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -574,8 +574,8 @@
       "type": "urltest",
       "tag": "r-JP",
       "outbounds": [
-        "jp-1-Japan-50.7.44.19-443",
-        "jp-1-Japan-50.7.44.30-443"
+        "jp-1-Japan-50.7.44.28-443",
+        "jp-1-Japan-50.7.44.19-443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -586,8 +586,8 @@
       "type": "urltest",
       "tag": "r-NL",
       "outbounds": [
-        "nl-1-Netherlands-213.152.165.206-443",
-        "nl-1-Netherlands-213.152.165.198-443"
+        "nl-1-Netherlands-213.152.165.194-2053",
+        "nl-1-Netherlands-213.152.165.202-443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -598,8 +598,8 @@
       "type": "urltest",
       "tag": "r-SG",
       "outbounds": [
-        "sg-1-Singapore-67.159.49.26-2083",
-        "sg-1-Singapore-50.7.252.50-443"
+        "sg-1-Singapore-50.7.252.50-2053",
+        "sg-1-Singapore-67.159.49.30-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -610,8 +610,8 @@
       "type": "urltest",
       "tag": "r-US",
       "outbounds": [
-        "us-1-UnitedStates-198.16.113.219-2088",
-        "us-1-UnitedStates-50.7.245.203-2088"
+        "us-1-UnitedStates-50.7.245.206-2088",
+        "us-1-UnitedStates-50.7.245.213-2088"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -622,13 +622,13 @@
       "type": "urltest",
       "tag": "asia",
       "outbounds": [
-        "sg-1-Singapore-67.159.49.26-2083",
-        "sg-1-Singapore-50.7.252.50-443",
+        "sg-1-Singapore-50.7.252.50-2053",
+        "sg-1-Singapore-67.159.49.30-2053",
+        "jp-1-Japan-50.7.44.28-443",
         "jp-1-Japan-50.7.44.19-443",
-        "jp-1-Japan-50.7.44.30-443",
-        "hk-1-HongKong-50.7.44.28-2091",
-        "hk-1-HongKong-50.7.44.26-2091",
-        "ir-3-Iran-198.16.113.218-8443",
+        "hk-1-HongKong-50.7.44.20-2091",
+        "hk-1-HongKong-50.7.44.21-2091",
+        "ir-3-Iran-198.16.113.222-8443",
         "ir-3-Iran-50.7.245.202-8443"
       ],
       "url": "http://www.gstatic.com/generate_204",
@@ -640,18 +640,18 @@
       "type": "urltest",
       "tag": "west",
       "outbounds": [
-        "us-1-UnitedStates-198.16.113.219-2088",
-        "us-1-UnitedStates-50.7.245.203-2088",
-        "ca-1-Canada-50.7.245.213-2093",
+        "us-1-UnitedStates-50.7.245.206-2088",
+        "us-1-UnitedStates-50.7.245.213-2088",
         "ca-1-Canada-198.16.113.220-2093",
-        "nl-1-Netherlands-213.152.165.206-443",
-        "nl-1-Netherlands-213.152.165.198-443",
-        "fr-1-France-50.7.245.206-2053",
-        "fr-1-France-50.7.245.202-443",
-        "de-1-Germany-50.7.86.210-443",
-        "de-1-Germany-50.7.156.122-2083",
-        "es-1-Spain-67.159.46.133-2083",
-        "es-1-Spain-67.159.47.237-443"
+        "ca-1-Canada-50.7.245.221-2093",
+        "nl-1-Netherlands-213.152.165.194-2053",
+        "nl-1-Netherlands-213.152.165.202-443",
+        "fr-1-France-198.16.113.220-2083",
+        "fr-1-France-50.7.245.221-2053",
+        "de-1-Germany-50.7.156.124-2053",
+        "de-1-Germany-50.7.86.203-443",
+        "es-1-Spain-67.159.47.238-2053",
+        "es-1-Spain-67.159.47.234-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
