@@ -3,105 +3,105 @@
     "id": "us-1",
     "name": "⬆️ Update in Google Play · United States",
     "country": "US",
-    "ip": "50.7.44.18",
+    "ip": "198.16.113.221",
     "port": 2088,
-    "ms": 259
+    "ms": 219
   },
   {
     "id": "us-1",
     "name": "⬆️ Update in Google Play · United States",
     "country": "US",
-    "ip": "50.7.159.146",
+    "ip": "198.16.113.219",
     "port": 2088,
-    "ms": 260
+    "ms": 220
   },
   {
     "id": "ca-1",
     "name": "⬆️ Update in Google Play · Canada",
     "country": "CA",
-    "ip": "50.7.245.205",
+    "ip": "50.7.245.219",
     "port": 2093,
-    "ms": 247
+    "ms": 188
   },
   {
     "id": "ca-1",
     "name": "⬆️ Update in Google Play · Canada",
     "country": "CA",
-    "ip": "213.152.165.203",
-    "port": 2093,
-    "ms": 247
-  },
-  {
-    "id": "nl-1",
-    "name": "⬆️ Update in Google Play · Netherlands",
-    "country": "NL",
-    "ip": "213.152.165.206",
-    "port": 2083,
-    "ms": 154
-  },
-  {
-    "id": "nl-1",
-    "name": "⬆️ Update in Google Play · Netherlands",
-    "country": "NL",
-    "ip": "213.152.165.201",
-    "port": 443,
-    "ms": 154
-  },
-  {
-    "id": "fr-1",
-    "name": "⬆️ Update in Google Play · France",
-    "country": "FR",
     "ip": "50.7.245.210",
+    "port": 2093,
+    "ms": 190
+  },
+  {
+    "id": "nl-1",
+    "name": "⬆️ Update in Google Play · Netherlands",
+    "country": "NL",
+    "ip": "213.152.165.198",
+    "port": 2083,
+    "ms": 102
+  },
+  {
+    "id": "nl-1",
+    "name": "⬆️ Update in Google Play · Netherlands",
+    "country": "NL",
+    "ip": "213.152.165.197",
     "port": 2053,
-    "ms": 149
+    "ms": 102
   },
   {
     "id": "fr-1",
     "name": "⬆️ Update in Google Play · France",
     "country": "FR",
-    "ip": "50.7.245.210",
+    "ip": "50.7.245.206",
     "port": 2083,
-    "ms": 149
+    "ms": 89
   },
   {
-    "id": "de-1",
-    "name": "⬆️ Update in Google Play · Germany",
-    "country": "DE",
-    "ip": "50.7.86.206",
-    "port": 2083,
-    "ms": 156
-  },
-  {
-    "id": "de-1",
-    "name": "⬆️ Update in Google Play · Germany",
-    "country": "DE",
-    "ip": "50.7.156.125",
-    "port": 2083,
-    "ms": 157
-  },
-  {
-    "id": "sg-1",
-    "name": "⬆️ Update in Google Play · Singapore",
-    "country": "SG",
-    "ip": "67.159.49.38",
-    "port": 2083,
-    "ms": 172
-  },
-  {
-    "id": "sg-1",
-    "name": "⬆️ Update in Google Play · Singapore",
-    "country": "SG",
-    "ip": "50.7.252.50",
+    "id": "fr-1",
+    "name": "⬆️ Update in Google Play · France",
+    "country": "FR",
+    "ip": "198.16.113.222",
     "port": 443,
-    "ms": 173
+    "ms": 89
+  },
+  {
+    "id": "de-1",
+    "name": "⬆️ Update in Google Play · Germany",
+    "country": "DE",
+    "ip": "50.7.86.210",
+    "port": 2053,
+    "ms": 90
+  },
+  {
+    "id": "de-1",
+    "name": "⬆️ Update in Google Play · Germany",
+    "country": "DE",
+    "ip": "50.7.156.124",
+    "port": 443,
+    "ms": 90
+  },
+  {
+    "id": "sg-1",
+    "name": "⬆️ Update in Google Play · Singapore",
+    "country": "SG",
+    "ip": "67.159.49.29",
+    "port": 2083,
+    "ms": 230
+  },
+  {
+    "id": "sg-1",
+    "name": "⬆️ Update in Google Play · Singapore",
+    "country": "SG",
+    "ip": "67.159.49.37",
+    "port": 443,
+    "ms": 230
   },
   {
     "id": "jp-1",
     "name": "⬆️ Update in Google Play · Japan",
     "country": "JP",
-    "ip": "50.7.44.27",
-    "port": 443,
-    "ms": 109
+    "ip": "50.7.44.18",
+    "port": 2083,
+    "ms": 164
   },
   {
     "id": "jp-1",
@@ -109,7 +109,7 @@
     "country": "JP",
     "ip": "50.7.44.22",
     "port": 443,
-    "ms": 109
+    "ms": 164
   },
   {
     "id": "hk-1",
@@ -117,7 +117,7 @@
     "country": "HK",
     "ip": "50.7.44.21",
     "port": 2091,
-    "ms": 154
+    "ms": 211
   },
   {
     "id": "hk-1",
@@ -125,22 +125,22 @@
     "country": "HK",
     "ip": "50.7.44.27",
     "port": 2091,
-    "ms": 157
+    "ms": 213
   },
   {
     "id": "es-1",
     "name": "⬆️ Update in Google Play · Spain",
     "country": "ES",
-    "ip": "67.159.47.237",
+    "ip": "67.159.47.236",
     "port": 2083,
-    "ms": 181
+    "ms": 116
   },
   {
     "id": "es-1",
     "name": "⬆️ Update in Google Play · Spain",
     "country": "ES",
-    "ip": "67.159.46.133",
-    "port": 443,
-    "ms": 182
+    "ip": "67.159.46.131",
+    "port": 2053,
+    "ms": 116
   }
 ]
