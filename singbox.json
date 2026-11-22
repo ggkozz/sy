@@ -30,10 +30,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.204-2088",
-      "server": "50.7.245.204",
+      "tag": "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.27-2088",
+      "server": "50.7.44.27",
       "server_port": 2088,
-      "uuid": "4c384e12-cba4-4eef-bed2-bbee44014d4e",
+      "uuid": "d810d2f0-778b-42bc-a637-aa1e5261ae9c",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -52,10 +52,10 @@
     },
     {
       "type": "vless",
-      "tag": "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.221-2088",
-      "server": "50.7.245.221",
+      "tag": "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.21-2088",
+      "server": "50.7.44.21",
       "server_port": 2088,
-      "uuid": "4c384e12-cba4-4eef-bed2-bbee44014d4e",
+      "uuid": "d810d2f0-778b-42bc-a637-aa1e5261ae9c",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -74,10 +74,10 @@
     },
     {
       "type": "vless",
-      "tag": "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.205-2093",
-      "server": "50.7.245.205",
+      "tag": "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.220-2093",
+      "server": "50.7.245.220",
       "server_port": 2093,
-      "uuid": "6162f538-d814-4dcb-be10-ac32dbb7ab85",
+      "uuid": "c736acd1-a758-46b4-84f2-fa0e51460066",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -96,10 +96,10 @@
     },
     {
       "type": "vless",
-      "tag": "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.221-2093",
-      "server": "198.16.113.221",
+      "tag": "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.218-2093",
+      "server": "198.16.113.218",
       "server_port": 2093,
-      "uuid": "6162f538-d814-4dcb-be10-ac32dbb7ab85",
+      "uuid": "c736acd1-a758-46b4-84f2-fa0e51460066",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -112,6 +112,28 @@
           "enabled": true,
           "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
           "short_id": "8a9725533854a7e8"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.206-443",
+      "server": "213.152.165.206",
+      "server_port": 443,
+      "uuid": "d186e81b-6c85-4ad9-85fc-9ca14341f7f3",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
+          "short_id": "906609ffc9e8d9fe"
         }
       },
       "flow": "xtls-rprx-vision"
@@ -121,7 +143,7 @@
       "tag": "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-443",
       "server": "213.152.165.194",
       "server_port": 443,
-      "uuid": "2e0944ad-c0b5-48ce-9b06-71a0674f279f",
+      "uuid": "d186e81b-6c85-4ad9-85fc-9ca14341f7f3",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -140,32 +162,10 @@
     },
     {
       "type": "vless",
-      "tag": "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083",
-      "server": "213.152.165.194",
-      "server_port": 2083,
-      "uuid": "2e0944ad-c0b5-48ce-9b06-71a0674f279f",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0",
-          "short_id": "906609ffc9e8d9fe"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "fr-1-⬆️UpdateinGooglePlay·France-50.7.245.212-2053",
-      "server": "50.7.245.212",
-      "server_port": 2053,
-      "uuid": "0caf2e79-5e4a-40b1-83ff-d84ac5c7d067",
+      "tag": "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-443",
+      "server": "198.16.113.218",
+      "server_port": 443,
+      "uuid": "e41c4eee-d03f-4eaf-a503-95d7e764ad38",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -184,10 +184,10 @@
     },
     {
       "type": "vless",
-      "tag": "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.221-443",
-      "server": "198.16.113.221",
-      "server_port": 443,
-      "uuid": "0caf2e79-5e4a-40b1-83ff-d84ac5c7d067",
+      "tag": "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-2053",
+      "server": "198.16.113.218",
+      "server_port": 2053,
+      "uuid": "e41c4eee-d03f-4eaf-a503-95d7e764ad38",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -206,10 +206,10 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.123-2053",
-      "server": "50.7.156.123",
+      "tag": "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.122-2053",
+      "server": "50.7.156.122",
       "server_port": 2053,
-      "uuid": "c1803b82-5cbf-4e35-962f-a21669d23dfb",
+      "uuid": "574ff036-308e-442b-812f-e6006319fbd2",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -228,10 +228,10 @@
     },
     {
       "type": "vless",
-      "tag": "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.213-2053",
-      "server": "50.7.86.213",
+      "tag": "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.204-2053",
+      "server": "50.7.86.204",
       "server_port": 2053,
-      "uuid": "c1803b82-5cbf-4e35-962f-a21669d23dfb",
+      "uuid": "574ff036-308e-442b-812f-e6006319fbd2",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -250,54 +250,54 @@
     },
     {
       "type": "vless",
-      "tag": "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.37-2053",
-      "server": "67.159.49.37",
-      "server_port": 2053,
-      "uuid": "961cf4e3-6922-4bb3-abce-e26b3084c52d",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
-          "short_id": "deccc6fac1ddb0ff"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.36-2053",
-      "server": "67.159.49.36",
-      "server_port": 2053,
-      "uuid": "961cf4e3-6922-4bb3-abce-e26b3084c52d",
-      "packet_encoding": "xudp",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
-          "short_id": "deccc6fac1ddb0ff"
-        }
-      },
-      "flow": "xtls-rprx-vision"
-    },
-    {
-      "type": "vless",
-      "tag": "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-443",
-      "server": "50.7.44.30",
+      "tag": "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.29-443",
+      "server": "67.159.49.29",
       "server_port": 443,
-      "uuid": "0a9e9d92-dce3-4b1f-b0ba-05d77caa59d2",
+      "uuid": "a5592da2-d387-415a-b24f-4225e5d97921",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
+          "short_id": "deccc6fac1ddb0ff"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.26-2053",
+      "server": "67.159.49.26",
+      "server_port": 2053,
+      "uuid": "a5592da2-d387-415a-b24f-4225e5d97921",
+      "packet_encoding": "xudp",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34",
+          "short_id": "deccc6fac1ddb0ff"
+        }
+      },
+      "flow": "xtls-rprx-vision"
+    },
+    {
+      "type": "vless",
+      "tag": "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-443",
+      "server": "50.7.44.26",
+      "server_port": 443,
+      "uuid": "10866ba2-c49a-42de-ad62-09d63354717f",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -316,10 +316,10 @@
     },
     {
       "type": "vless",
-      "tag": "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.27-2053",
-      "server": "50.7.44.27",
+      "tag": "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-2053",
+      "server": "50.7.44.26",
       "server_port": 2053,
-      "uuid": "0a9e9d92-dce3-4b1f-b0ba-05d77caa59d2",
+      "uuid": "10866ba2-c49a-42de-ad62-09d63354717f",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -341,7 +341,7 @@
       "tag": "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091",
       "server": "50.7.44.28",
       "server_port": 2091,
-      "uuid": "b0e7ac07-31a3-4fd2-92e8-465893d9a726",
+      "uuid": "70247fa4-24f7-4205-9a8b-548a18f9724d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -360,10 +360,10 @@
     },
     {
       "type": "vless",
-      "tag": "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.30-2091",
-      "server": "50.7.44.30",
+      "tag": "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.27-2091",
+      "server": "50.7.44.27",
       "server_port": 2091,
-      "uuid": "b0e7ac07-31a3-4fd2-92e8-465893d9a726",
+      "uuid": "70247fa4-24f7-4205-9a8b-548a18f9724d",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -382,10 +382,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.132-443",
-      "server": "67.159.46.132",
-      "server_port": 443,
-      "uuid": "0ac66669-9575-4524-9b39-746965512fe8",
+      "tag": "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.237-2083",
+      "server": "67.159.47.237",
+      "server_port": 2083,
+      "uuid": "f9422335-3f3f-4d99-8374-679ba776b71c",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -404,10 +404,10 @@
     },
     {
       "type": "vless",
-      "tag": "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.131-2053",
-      "server": "67.159.46.131",
-      "server_port": 2053,
-      "uuid": "0ac66669-9575-4524-9b39-746965512fe8",
+      "tag": "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.234-2083",
+      "server": "67.159.47.234",
+      "server_port": 2083,
+      "uuid": "f9422335-3f3f-4d99-8374-679ba776b71c",
       "packet_encoding": "xudp",
       "tls": {
         "enabled": true,
@@ -428,24 +428,24 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.204-2088",
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.221-2088",
-        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.205-2093",
-        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.221-2093",
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.27-2088",
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.21-2088",
+        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.220-2093",
+        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.218-2093",
+        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.206-443",
         "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-443",
-        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083",
-        "fr-1-⬆️UpdateinGooglePlay·France-50.7.245.212-2053",
-        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.221-443",
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.123-2053",
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.213-2053",
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.37-2053",
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.36-2053",
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-443",
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.27-2053",
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-443",
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-2053",
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.122-2053",
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.204-2053",
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.29-443",
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.26-2053",
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-443",
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-2053",
         "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091",
-        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.30-2091",
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.132-443",
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.131-2053"
+        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.27-2091",
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.237-2083",
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.234-2083"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -456,8 +456,8 @@
       "type": "urltest",
       "tag": "r-CA",
       "outbounds": [
-        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.205-2093",
-        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.221-2093"
+        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.220-2093",
+        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.218-2093"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -468,8 +468,8 @@
       "type": "urltest",
       "tag": "r-DE",
       "outbounds": [
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.123-2053",
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.213-2053"
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.122-2053",
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.204-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -480,8 +480,8 @@
       "type": "urltest",
       "tag": "r-ES",
       "outbounds": [
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.132-443",
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.131-2053"
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.237-2083",
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.234-2083"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -492,8 +492,8 @@
       "type": "urltest",
       "tag": "r-FR",
       "outbounds": [
-        "fr-1-⬆️UpdateinGooglePlay·France-50.7.245.212-2053",
-        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.221-443"
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-443",
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -505,7 +505,7 @@
       "tag": "r-HK",
       "outbounds": [
         "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091",
-        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.30-2091"
+        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.27-2091"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -516,8 +516,8 @@
       "type": "urltest",
       "tag": "r-JP",
       "outbounds": [
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-443",
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.27-2053"
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-443",
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -528,8 +528,8 @@
       "type": "urltest",
       "tag": "r-NL",
       "outbounds": [
-        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-443",
-        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083"
+        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.206-443",
+        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-443"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -540,8 +540,8 @@
       "type": "urltest",
       "tag": "r-SG",
       "outbounds": [
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.37-2053",
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.36-2053"
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.29-443",
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.26-2053"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -552,8 +552,8 @@
       "type": "urltest",
       "tag": "r-US",
       "outbounds": [
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.204-2088",
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.221-2088"
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.27-2088",
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.21-2088"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -564,12 +564,12 @@
       "type": "urltest",
       "tag": "asia",
       "outbounds": [
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.37-2053",
-        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.36-2053",
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-443",
-        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.27-2053",
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.29-443",
+        "sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.26-2053",
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-443",
+        "jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.26-2053",
         "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091",
-        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.30-2091"
+        "hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.27-2091"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -580,18 +580,18 @@
       "type": "urltest",
       "tag": "west",
       "outbounds": [
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.204-2088",
-        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.221-2088",
-        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.205-2093",
-        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.221-2093",
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.27-2088",
+        "us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.21-2088",
+        "ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.220-2093",
+        "ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.218-2093",
+        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.206-443",
         "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-443",
-        "nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083",
-        "fr-1-⬆️UpdateinGooglePlay·France-50.7.245.212-2053",
-        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.221-443",
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.123-2053",
-        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.213-2053",
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.132-443",
-        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.131-2053"
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-443",
+        "fr-1-⬆️UpdateinGooglePlay·France-198.16.113.218-2053",
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.122-2053",
+        "de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.204-2053",
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.237-2083",
+        "es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.234-2083"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "3m",
