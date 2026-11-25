@@ -1,9 +1,9 @@
 proxies:
-  - name: us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.26-2088
+  - name: us-1-⬆️UpdateinGooglePlay·UnitedStates-198.16.113.221-2088
     type: vless
-    server: 50.7.44.26
+    server: 198.16.113.221
     port: 2088
-    uuid: 553e5306-e7e4-4a75-8523-a543ce8e10f8
+    uuid: 1b2fc98c-432a-4ec6-8ec2-fb73bad9ea6f
     udp: true
     tls: true
     network: tcp
@@ -13,11 +13,11 @@ proxies:
       public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo
       short-id: 66d62ef550107695
     flow: xtls-rprx-vision
-  - name: us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.29-2088
+  - name: us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.210-2088
     type: vless
-    server: 50.7.44.29
+    server: 50.7.245.210
     port: 2088
-    uuid: 553e5306-e7e4-4a75-8523-a543ce8e10f8
+    uuid: 1b2fc98c-432a-4ec6-8ec2-fb73bad9ea6f
     udp: true
     tls: true
     network: tcp
@@ -27,11 +27,11 @@ proxies:
       public-key: bvG7GBU_gOKuBuAagnC07EbQZ_2tJ8OhBNSVGkHSugo
       short-id: 66d62ef550107695
     flow: xtls-rprx-vision
-  - name: ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.203-2093
+  - name: ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.220-2093
     type: vless
-    server: 50.7.245.203
+    server: 198.16.113.220
     port: 2093
-    uuid: 05dfd72d-d4df-43be-bd86-bc47d7a719d9
+    uuid: 2d97c0ee-b666-4ac4-8751-fb708f3e807f
     udp: true
     tls: true
     network: tcp
@@ -41,11 +41,11 @@ proxies:
       public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
       short-id: 8a9725533854a7e8
     flow: xtls-rprx-vision
-  - name: ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.218-2093
+  - name: ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.213-2093
     type: vless
-    server: 50.7.245.218
+    server: 50.7.245.213
     port: 2093
-    uuid: 05dfd72d-d4df-43be-bd86-bc47d7a719d9
+    uuid: 2d97c0ee-b666-4ac4-8751-fb708f3e807f
     udp: true
     tls: true
     network: tcp
@@ -55,81 +55,67 @@ proxies:
       public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
       short-id: 8a9725533854a7e8
     flow: xtls-rprx-vision
-  - name: nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.196-443
+  - name: nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.205-2053
     type: vless
-    server: 213.152.165.196
-    port: 443
-    uuid: 3dfd520a-be7a-412e-ac8e-19a1c8d96e76
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
-      short-id: 906609ffc9e8d9fe
-    flow: xtls-rprx-vision
-  - name: nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083
-    type: vless
-    server: 213.152.165.194
-    port: 2083
-    uuid: 3dfd520a-be7a-412e-ac8e-19a1c8d96e76
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
-      short-id: 906609ffc9e8d9fe
-    flow: xtls-rprx-vision
-  - name: fr-1-⬆️UpdateinGooglePlay·France-50.7.245.218-443
-    type: vless
-    server: 50.7.245.218
-    port: 443
-    uuid: dec1dc3f-806e-43a9-8438-a896dafa228d
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-      short-id: 716b7eba38125f3a
-    flow: xtls-rprx-vision
-  - name: fr-1-⬆️UpdateinGooglePlay·France-198.16.113.222-443
-    type: vless
-    server: 198.16.113.222
-    port: 443
-    uuid: dec1dc3f-806e-43a9-8438-a896dafa228d
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-      short-id: 716b7eba38125f3a
-    flow: xtls-rprx-vision
-  - name: de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.125-443
-    type: vless
-    server: 50.7.156.125
-    port: 443
-    uuid: bb8dc303-3b88-4527-b2d4-19905a2e40ad
-    udp: true
-    tls: true
-    network: tcp
-    servername: www.apple.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
-      short-id: 55986a94e2228791
-    flow: xtls-rprx-vision
-  - name: de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.205-2053
-    type: vless
-    server: 50.7.86.205
+    server: 213.152.165.205
     port: 2053
-    uuid: bb8dc303-3b88-4527-b2d4-19905a2e40ad
+    uuid: ef905022-8ec5-4c45-adc1-e9186b3f4957
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
+      short-id: 906609ffc9e8d9fe
+    flow: xtls-rprx-vision
+  - name: nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.202-2083
+    type: vless
+    server: 213.152.165.202
+    port: 2083
+    uuid: ef905022-8ec5-4c45-adc1-e9186b3f4957
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: x3V7PB2__QEKcDuE5SgVoe0IgcbxdqOXXr0ai85s-C0
+      short-id: 906609ffc9e8d9fe
+    flow: xtls-rprx-vision
+  - name: fr-1-⬆️UpdateinGooglePlay·France-50.7.245.202-443
+    type: vless
+    server: 50.7.245.202
+    port: 443
+    uuid: f98970cd-9b0c-42a1-9f3a-5ecb6b5eb570
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+      short-id: 716b7eba38125f3a
+    flow: xtls-rprx-vision
+  - name: fr-1-⬆️UpdateinGooglePlay·France-50.7.245.221-443
+    type: vless
+    server: 50.7.245.221
+    port: 443
+    uuid: f98970cd-9b0c-42a1-9f3a-5ecb6b5eb570
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+      short-id: 716b7eba38125f3a
+    flow: xtls-rprx-vision
+  - name: de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2053
+    type: vless
+    server: 50.7.86.206
+    port: 2053
+    uuid: f17dccba-3a8d-47df-9465-fa1b4d3ee436
     udp: true
     tls: true
     network: tcp
@@ -139,11 +125,25 @@ proxies:
       public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
       short-id: 55986a94e2228791
     flow: xtls-rprx-vision
-  - name: sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2083
+  - name: de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2083
+    type: vless
+    server: 50.7.86.206
+    port: 2083
+    uuid: f17dccba-3a8d-47df-9465-fa1b4d3ee436
+    udp: true
+    tls: true
+    network: tcp
+    servername: www.apple.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+      short-id: 55986a94e2228791
+    flow: xtls-rprx-vision
+  - name: sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2053
     type: vless
     server: 67.159.49.38
-    port: 2083
-    uuid: 9636a4a6-200a-4a71-8478-114463d82d56
+    port: 2053
+    uuid: 16c90eed-4dd0-4427-b8ea-7fdc31b31aaf
     udp: true
     tls: true
     network: tcp
@@ -153,11 +153,11 @@ proxies:
       public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34
       short-id: deccc6fac1ddb0ff
     flow: xtls-rprx-vision
-  - name: sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-2083
+  - name: sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-443
     type: vless
     server: 67.159.49.27
-    port: 2083
-    uuid: 9636a4a6-200a-4a71-8478-114463d82d56
+    port: 443
+    uuid: 16c90eed-4dd0-4427-b8ea-7fdc31b31aaf
     udp: true
     tls: true
     network: tcp
@@ -167,11 +167,11 @@ proxies:
       public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34
       short-id: deccc6fac1ddb0ff
     flow: xtls-rprx-vision
-  - name: jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.19-2053
+  - name: jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-2053
     type: vless
-    server: 50.7.44.19
+    server: 50.7.44.30
     port: 2053
-    uuid: 3749b104-9292-4d48-8203-a41cb76265d5
+    uuid: affd252a-578c-4620-96a1-0eddd1759741
     udp: true
     tls: true
     network: tcp
@@ -181,11 +181,11 @@ proxies:
       public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
       short-id: bb472a184677af64
     flow: xtls-rprx-vision
-  - name: jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.22-2083
+  - name: jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.21-2053
     type: vless
-    server: 50.7.44.22
-    port: 2083
-    uuid: 3749b104-9292-4d48-8203-a41cb76265d5
+    server: 50.7.44.21
+    port: 2053
+    uuid: affd252a-578c-4620-96a1-0eddd1759741
     udp: true
     tls: true
     network: tcp
@@ -199,7 +199,7 @@ proxies:
     type: vless
     server: 50.7.44.28
     port: 2091
-    uuid: dc1cf7a0-6a88-450b-87d3-95d79d10c73d
+    uuid: 566583e8-9497-4936-aff4-18cc310e1523
     udp: true
     tls: true
     network: tcp
@@ -209,11 +209,11 @@ proxies:
       public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
       short-id: 08a4b1f473932632
     flow: xtls-rprx-vision
-  - name: hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.18-2091
+  - name: hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.22-2091
     type: vless
-    server: 50.7.44.18
+    server: 50.7.44.22
     port: 2091
-    uuid: dc1cf7a0-6a88-450b-87d3-95d79d10c73d
+    uuid: 566583e8-9497-4936-aff4-18cc310e1523
     udp: true
     tls: true
     network: tcp
@@ -223,11 +223,11 @@ proxies:
       public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
       short-id: 08a4b1f473932632
     flow: xtls-rprx-vision
-  - name: es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-443
+  - name: es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-2053
     type: vless
     server: 67.159.46.130
-    port: 443
-    uuid: 7b297b60-0fc3-4a67-a1b2-cb93f3e8778b
+    port: 2053
+    uuid: 72119ab7-acc6-48f5-8607-1e43db4405ff
     udp: true
     tls: true
     network: tcp
@@ -237,11 +237,11 @@ proxies:
       public-key: OKksVHWL5JepTv7if7Ta_L_7vn8OxW0INwV71HJM1jI
       short-id: 3869d49a9a79e06a
     flow: xtls-rprx-vision
-  - name: es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.236-443
+  - name: es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.134-2053
     type: vless
-    server: 67.159.47.236
-    port: 443
-    uuid: 7b297b60-0fc3-4a67-a1b2-cb93f3e8778b
+    server: 67.159.46.134
+    port: 2053
+    uuid: 72119ab7-acc6-48f5-8607-1e43db4405ff
     udp: true
     tls: true
     network: tcp
@@ -260,24 +260,24 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.26-2088
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.29-2088
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.203-2093
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.218-2093
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.196-443
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083
-      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.218-443
-      - fr-1-⬆️UpdateinGooglePlay·France-198.16.113.222-443
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.125-443
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.205-2053
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2083
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-2083
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.19-2053
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.22-2083
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-198.16.113.221-2088
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.210-2088
+      - ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.220-2093
+      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.213-2093
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.205-2053
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.202-2083
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.202-443
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.221-443
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2053
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2083
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2053
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-443
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-2053
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.21-2053
       - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091
-      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.18-2091
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-443
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.236-443
+      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.22-2091
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-2053
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.134-2053
   - name: 📍 CA
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -286,8 +286,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.203-2093
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.218-2093
+      - ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.220-2093
+      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.213-2093
   - name: 📍 DE
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -296,8 +296,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.125-443
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.205-2053
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2053
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2083
   - name: 📍 ES
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -306,8 +306,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-443
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.236-443
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-2053
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.134-2053
   - name: 📍 FR
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -316,8 +316,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.218-443
-      - fr-1-⬆️UpdateinGooglePlay·France-198.16.113.222-443
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.202-443
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.221-443
   - name: 📍 HK
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -327,7 +327,7 @@ proxy-groups:
     max-failed-times: 3
     proxies:
       - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091
-      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.18-2091
+      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.22-2091
   - name: 📍 JP
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -336,8 +336,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.19-2053
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.22-2083
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-2053
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.21-2053
   - name: 📍 NL
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -346,8 +346,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.196-443
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.205-2053
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.202-2083
   - name: 📍 SG
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -356,8 +356,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2083
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-2083
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2053
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-443
   - name: 📍 US
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -366,8 +366,8 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.26-2088
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.29-2088
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-198.16.113.221-2088
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.210-2088
   - name: 🌏 asia
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -376,12 +376,12 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2083
-      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-2083
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.19-2053
-      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.22-2083
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.38-2053
+      - sg-1-⬆️UpdateinGooglePlay·Singapore-67.159.49.27-443
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.30-2053
+      - jp-1-⬆️UpdateinGooglePlay·Japan-50.7.44.21-2053
       - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.28-2091
-      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.18-2091
+      - hk-1-⬆️UpdateinGooglePlay·HongKong-50.7.44.22-2091
   - name: 🌎 west
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -390,17 +390,17 @@ proxy-groups:
     lazy: false
     max-failed-times: 3
     proxies:
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.26-2088
-      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.44.29-2088
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.203-2093
-      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.218-2093
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.196-443
-      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.194-2083
-      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.218-443
-      - fr-1-⬆️UpdateinGooglePlay·France-198.16.113.222-443
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.156.125-443
-      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.205-2053
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-443
-      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.47.236-443
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-198.16.113.221-2088
+      - us-1-⬆️UpdateinGooglePlay·UnitedStates-50.7.245.210-2088
+      - ca-1-⬆️UpdateinGooglePlay·Canada-198.16.113.220-2093
+      - ca-1-⬆️UpdateinGooglePlay·Canada-50.7.245.213-2093
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.205-2053
+      - nl-1-⬆️UpdateinGooglePlay·Netherlands-213.152.165.202-2083
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.202-443
+      - fr-1-⬆️UpdateinGooglePlay·France-50.7.245.221-443
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2053
+      - de-1-⬆️UpdateinGooglePlay·Germany-50.7.86.206-2083
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.130-2053
+      - es-1-⬆️UpdateinGooglePlay·Spain-67.159.46.134-2053
 rules:
   - MATCH,auto
